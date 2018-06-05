@@ -1,18 +1,27 @@
 $(document).ready(function() {
 
-
-    
     (function addMainSlider() {
         initSlider($('#main-slider'),$('#main-slider .banner__item:first-child'),".banner__item");
     })();
     (function wrapButton() {
         wrapUpSliderArrow('.slick-arrow', 'template-wrapper wrapper-slider-button');
     })();
+    (function validateSubscribe() {
+        validationForm($('#subscribe-form'));
+    })();
+    
     
     function wrapUpSliderArrow(arrow, wrapper) {
        $(arrow).wrapAll('<div class="' + wrapper + '"></div>');
     };
-
+    function validationForm(selector) {
+        selector.validate();
+        jQuery.extend(jQuery.validator.messages, {
+            required: "Это поле обязательно для заполнения",
+            minlength: "Введите корректный телефон",
+            email: "Введите корректный email",
+        });
+    };
     function initSlider(initSelector, firstChild, sliderItem) {
         initSelector.on('init', function(e, slick) {
             var $firstAnimatingElements = firstChild.find('[data-animation]');

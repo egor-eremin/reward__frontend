@@ -468,10 +468,10 @@ input {
     padding: 0;
     border: 0;
 }
-input::-webkit-input-placeholder       {color: #b3b3b3; opacity: 1; transition: opacity 0.3s ease;}
-input::-moz-placeholder                {color: #b3b3b3; opacity: 1; transition: opacity 0.3s ease;}
-input:-moz-placeholder                 {color: #b3b3b3; opacity: 1; transition: opacity 0.3s ease;}
-input:-ms-input-placeholder            {color: #b3b3b3; opacity: 1; transition: opacity 0.3s ease;}
+input::-webkit-input-placeholder       {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
 input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
 input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
 input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
@@ -480,22 +480,20 @@ input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s eas
     width: 100%;
     max-width: 1232px;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .root-wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-header {
-
-}
 footer {
     margin-top: auto;
 }
 .banner {
     width: 100%;
+    overflow: hidden;
 }
 .banner-wrapper {
     padding-left: 8.625rem;
@@ -668,7 +666,7 @@ footer {
 }
 .footer-tittle {
     font-weight: 700;
-    padding-bottom: 8px;
+    margin-bottom: 2.375rem;
 }
 .underlining {
     border-bottom-width: 4px;
@@ -676,4 +674,118 @@ footer {
 }
 .underlining_white {
     border-bottom-color: #fff;
+}
+.underlining {
+    padding-bottom: 5px;
+    display: inline-block;
+}
+.footer__menu-item a {
+    font-size: 0.875rem;
+    text-decoration: underline;
+    line-height: 2.14;
+}
+.footer__menu-item a:hover {
+    text-decoration: none;
+}
+.footer__text {
+    font-size: 0.875rem;
+    line-height: 2.14;
+}
+.footer__text a {
+    color: #0055cc;
+    text-decoration: underline;
+}
+.footer__text a:hover {
+    text-decoration: none;
+}
+.footer-subscribe__input {
+    border: 1px solid #fff;
+    background-color: transparent;
+    height: 34px;
+    border-radius: 17px;
+    width: 100%;
+    padding: 5px 30px 5px 16px;
+    font-weight: 300;
+}
+.footer-subscribe {
+    position: relative;
+    margin-bottom: 1.1875rem;
+}
+.subscribe-button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    transition: right .3s ease-in-out;
+}
+.subscribe-button:hover {
+    right: 8px;
+}
+.subscribe-button svg {
+    width: 100%;
+    height: 100%;
+}
+.social-network {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    margin-bottom: 2.5rem;
+}
+.social-network__item {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0078ab;
+    margin-right: 19px;
+}
+svg {
+    vertical-align: top;
+}
+.development__megeMir {
+    opacity: .4;
+    transition: .3s ease-in-out;
+}
+.development__megeMir:hover {
+    opacity: 1;
+}
+.development__megeMir svg {
+    width: 163px;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.development__text {
+    font-size: 0.875rem;
+}
+.footer-subscribe label.error {
+    display: none !important;
+}
+.footer-subscribe__input.error {
+    border-color: red;
+}
+.header-info__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.main-logo__img {
+    display: flex;
+    color: #0078ab;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 26px;
+}
+.main-logo__img svg {
+    margin-right: 8px;
+}
+.main-logo__text {
+    font-size: 12px;
+    color: #888787;
 }
