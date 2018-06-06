@@ -21,7 +21,14 @@
     <div class="main-wrapper">
         <div class="root-wrapper">
             <header>
-                <div class="banner" id="main-slider">
+                <div class="slider-wrapper">
+                    <div class="template-wrapper template-wrapper_close">
+                    <div class="banner__close">
+                        <div class="banner__close-item"></div>
+                        <div class="banner__close-item"></div>
+                    </div>
+                </div>
+                    <div class="banner" id="main-slider">
                     <div class="banner__item" style="background-image: url('images/banner1.jpg')">
                         <div class="template-wrapper banner-wrapper">
                             <div class="banner__name" data-animation="fadeInLeft" data-delay=".2s" data-after-animation="fadeOutLeft">Флаги</div>
@@ -40,6 +47,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div class="main-menu">
                     <div class="template-wrapper main-menu__wrapper">
@@ -151,7 +159,8 @@
                         </div>
                         <div class="search">
                             <form action="#" class="search__form" method="post">
-                                <input type="search" placeholder="Поиск">
+                                <input type="search" class="search__input" id="search-input" placeholder="Поиск">
+                                <label class="search__label" for="search-input"></label>
                                 <button class="search__button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24.84" height="24.969" viewBox="0 0 24.84 24.969">
                                         <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
@@ -169,23 +178,31 @@
                                                 }
                                             </style>
                                         </defs>
-                                        <path id="Фигура_27" data-name="Фигура 27" class="cls-1" d="M1310.58,321.216l-6.09-6.105a10.469,10.469,0,0,0-.67-14.04,10.511,10.511,0,1,0-.79,15.5l6.09,6.106a0.958,0.958,0,0,0,1.39,0A1.009,1.009,0,0,0,1310.58,321.216Zm-20.07-6.786a8.5,8.5,0,0,1,0-11.959,8.373,8.373,0,0,1,11.91,0,8.5,8.5,0,0,1,0,11.959A8.407,8.407,0,0,1,1290.51,314.43Z" transform="translate(-1286 -298)"/>
-                                    </svg>
+                                        <path id="Фигура_27" data-name="Фигура 27" style="fill: #404040;" class="cls-1" d="M1310.58,321.216l-6.09-6.105a10.469,10.469,0,0,0-.67-14.04,10.511,10.511,0,1,0-.79,15.5l6.09,6.106a0.958,0.958,0,0,0,1.39,0A1.009,1.009,0,0,0,1310.58,321.216Zm-20.07-6.786a8.5,8.5,0,0,1,0-11.959,8.373,8.373,0,0,1,11.91,0,8.5,8.5,0,0,1,0,11.959A8.407,8.407,0,0,1,1290.51,314.43Z" transform="translate(-1286 -298)"/>
+                                     </svg>
                                 </button>
                             </form>
+                            <div class="search__help">
+                                Введите поисковый запрос, например <span class="search__help-custom-text">медаль</span>
+                            </div>
                         </div>
                         <a href="#" class="basket">
                             <div class="basket__icon">
                                 <div class="basket__quantity">
                                     12
                                 </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="27" height="22.969" viewBox="0 0 27 22.969">
+                                    <defs>
+                                    </defs>
+                                    <path style="fill: #303030;" d="M26.413,9.659 C25.823,8.870 24.865,8.418 23.783,8.418 L20.735,8.418 L16.895,0.784 C16.533,0.065 15.655,-0.226 14.932,0.133 C14.209,0.492 13.916,1.366 14.277,2.085 L17.463,8.418 L9.611,8.418 L12.796,2.085 C13.159,1.366 12.865,0.492 12.142,0.133 C11.419,-0.227 10.539,0.064 10.179,0.784 L6.338,8.418 L3.291,8.418 C2.222,8.418 1.261,8.863 0.650,9.640 C0.040,10.417 -0.162,11.454 0.097,12.484 L1.888,19.606 C2.363,21.491 4.264,22.966 6.218,22.966 L20.270,22.966 C22.195,22.966 24.134,21.532 24.687,19.700 L26.854,12.521 C27.164,11.490 27.003,10.447 26.413,9.659 ZM24.049,11.684 L21.883,18.864 C21.697,19.478 20.914,20.057 20.270,20.057 L6.218,20.057 C5.602,20.057 4.877,19.495 4.728,18.900 L2.937,11.779 C2.898,11.627 2.906,11.496 2.957,11.432 C3.008,11.367 3.133,11.328 3.291,11.328 L23.783,11.328 C23.957,11.328 24.048,11.374 24.064,11.396 C24.081,11.419 24.099,11.518 24.049,11.684 Z" class="cls-1"/>
+                                </svg>
                             </div>
                             <div class="basket__text-block">
                                 <div class="basket__title">
                                     Корзина
                                 </div>
                                 <div class="basket__value">
-                                    25 000 <i class="fas fa-ruble-sign"></i>
+                                    25 000 &#8381;
                                 </div>
                             </div>
                         </a>

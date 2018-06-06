@@ -9,6 +9,11 @@ $(document).ready(function() {
     (function validateSubscribe() {
         validationForm($('#subscribe-form'));
     })();
+    (function closeMainSlider() {
+        $('.banner__close').on('click', function () {
+            $('.slider-wrapper').slideUp(300);
+        })
+    })();
     
     
     function wrapUpSliderArrow(arrow, wrapper) {
