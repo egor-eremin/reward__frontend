@@ -19,7 +19,13 @@ $(document).ready(function() {
     })();
     (function openCategoryMenu() {
         $('#open-category-menu').on('click', function () {
-            $('#open-category-menu').toggleClass('open');
+            if ($(this).hasClass('open')) {
+                $('.category-menu').removeClass('show');
+                $(this).removeClass('open');
+            } else {
+                $(this).addClass('open');
+                $('.category-menu').addClass('show');
+            }
         });
     })();
     
