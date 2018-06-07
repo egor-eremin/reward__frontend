@@ -14,7 +14,14 @@ $(document).ready(function() {
             $('.slider-wrapper').slideUp(300);
         })
     })();
-    
+    (function validateSearchForm() {
+        validationForm($('#search-form'));
+    })();
+    (function openCategoryMenu() {
+        $('#open-category-menu').on('click', function () {
+            $('#open-category-menu').toggleClass('open');
+        });
+    })();
     
     function wrapUpSliderArrow(arrow, wrapper) {
        $(arrow).wrapAll('<div class="' + wrapper + '"></div>');

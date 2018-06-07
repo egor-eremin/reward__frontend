@@ -158,8 +158,8 @@
                             </div>
                         </div>
                         <div class="search">
-                            <form action="#" class="search__form" method="post">
-                                <input type="search" class="search__input" id="search-input" placeholder="Поиск">
+                            <form action="#" class="search__form" id="search-form" method="post">
+                                <input type="search" class="search__input" id="search-input" name="search-text" required placeholder="Поиск">
                                 <label class="search__label" for="search-input"></label>
                                 <button class="search__button">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24.84" height="24.969" viewBox="0 0 24.84 24.969">
@@ -206,6 +206,268 @@
                                 </div>
                             </div>
                         </a>
+                    </div>
+                </div>
+                <div class="menu-catalog">
+                    <div class="template-wrapper menu-catalog-wrapper">
+                        <div class="category-menu-wrapper">
+                            <button id="open-category-menu" class="menu-catalog_button">
+                                <span class="catalog-burger">
+                                    <span class="catalog-burger__line"></span>
+                                    <span class="catalog-burger__line"></span>
+                                    <span class="catalog-burger__line"></span>
+                                </span>
+                                Каталог
+                            </button>
+                                <div class="category-menu">
+                                    <ul class="category-menu__list">
+                                        <li class="category-menu__item">
+                                            <a href="#">Наградная продукция</a>
+                                            <div class="category-menu__sub-wrapper">
+                                                <ul class="__list-sub">
+                                                    <li class="category-menu__sub-item category-menu__sub-item_title">
+                                                        Кубки
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки стандартные <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки престижные <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки эконом <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки оригинальные <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки пластиковые <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки стело, хрусталь <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки многоуровневые <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item">
+                                                        <a href="#">
+                                                            Кубки "много размеров"с
+                                                            кубки с символикой Росси,
+                                                            Иркутска и области <span>55</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="category-menu__sub-item category-menu__sub-item_sale">
+                                                        <a href="#">
+                                                            Распродажа
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Сувенирная продукция</a>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Текстиль</a>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Полиграфия</a>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Бейджи и номерки</a>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Печати и штампы</a>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Баннеры, наклейки стенды</a>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Гравировка на подарках</a>
+                                        </li>
+                                        <li class="category-menu__item">
+                                            <a href="#">Флаги и номера</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <a href="#" class="close-category-menu"></a>
+                        </div>
+                        <ul class="menu-catalog__list">
+                            <li class="menu-catalog__item menu-catalog__item_with-sub">
+                                <a href="#">
+                                    Текстиль
+                                </a>
+                                <div class="sub-list-wrapper">
+                                    <ul class="menu-catalog__sub-list">
+                                        <li class="menu-catalog__item menu-catalog__item_sub menu-catalog__item_with-sub">
+                                            <a href="#">Футболки</a>
+                                            <span class="chevron-right">></span>
+                                            <div class="sub-list-wrapper sub-list-wrapper_next-level">
+                                                <ul class="menu-catalog__sub-list menu-catalog__sub-list_next-level">
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Рубашки поло</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Кепки и бейсболки</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Толстовки</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Аксессуары</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Детская одежда</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Жилеты</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Офисные рубашки</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Спортивная одежда</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Шапки, шарфы, перчатки</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Водолазки</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Сорочки</a>
+                                                </li>
+                                                <li class="menu-catalog__item menu-catalog__item_sub">
+                                                    <a href="#">Брюки</a>
+                                                </li>
+                                            </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Рубашки поло</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub menu-catalog__item_with-sub">
+                                            <a href="#">Кепки и бейсболки</a>
+                                            <span class="chevron-right">></span>
+                                            <div class="sub-list-wrapper sub-list-wrapper_next-level">
+                                                <ul class="menu-catalog__sub-list menu-catalog__sub-list_next-level">
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Рубашки поло</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Кепки и бейсболки</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Толстовки</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Аксессуары</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Детская одежда</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Жилеты</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Офисные рубашки</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Спортивная одежда</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Шапки, шарфы, перчатки</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Водолазки</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Сорочки</a>
+                                                    </li>
+                                                    <li class="menu-catalog__item menu-catalog__item_sub">
+                                                        <a href="#">Брюки</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Толстовки</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Детская одежда</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Жилеты</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Офисные рубашки</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Спортивная одежда</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Шапки, шарфы, перчатки</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Водолазки</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Сорочки</a>
+                                        </li>
+                                        <li class="menu-catalog__item menu-catalog__item_sub">
+                                            <a href="#">Брюки</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu-catalog__item">
+                                <a href="#">
+                                    Флаги, номера
+                                </a>
+                            </li>
+                            <li class="menu-catalog__item">
+                                <a href="#">
+                                    Полиграфия
+                                </a>
+                            </li>
+                            <li class="menu-catalog__item">
+                                <a href="#">
+                                    Бейджи и номерки
+                                </a>
+                            </li>
+                            <li class="menu-catalog__item">
+                                <a href="#">
+                                    Печати штампы
+                                </a>
+                            </li>
+                            <li class="menu-catalog__item">
+                                <a href="#">
+                                    Баннеры, наклейки стенды
+                                </a>
+                            </li>
+                            <li class="menu-catalog__item">
+                                <a href="#">
+                                    Гравировка на подарках
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </header>
