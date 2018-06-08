@@ -22,13 +22,28 @@ $(document).ready(function() {
             if ($(this).hasClass('open')) {
                 $('.category-menu').removeClass('show');
                 $(this).removeClass('open');
+                $('.close-category-menu').removeClass('active');
             } else {
                 $(this).addClass('open');
                 $('.category-menu').addClass('show');
+                $('.close-category-menu').addClass('active');
             }
         });
     })();
-    
+    (function closeCategoryMenu() {
+        $('.close-category-menu').on('click', function (e) {
+           e.preventDefault();
+           $(this).removeClass('active');
+           $('.category-menu').removeClass('show');
+           $('#open-category-menu').removeClass('open');
+        });
+    })();
+    (function initTooltip() {
+        $('.tooltip').tooltipster({
+            interactive: true,
+        });
+    })();
+
     function wrapUpSliderArrow(arrow, wrapper) {
        $(arrow).wrapAll('<div class="' + wrapper + '"></div>');
     };
