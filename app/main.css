@@ -1241,9 +1241,15 @@ svg {
 .category-menu__submenu1 .category-menu__text {
     margin-right: 3px;
 }
-.category-menu__submenu1 {
-    position: relative;
-}
 .category-menu__submenu1-item + .category-menu__submenu1-item {
     margin-top: 0.875rem;
+}
+.tooltip-blocks {
+    display: none;
+}
+.category-menu__submenu1-wrapper::before {
+    content: "";
+    top: 0;
+    border: 10px solid transparent;
+    border-bottom: 9px solid white;
 }
