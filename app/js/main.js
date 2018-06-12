@@ -43,6 +43,19 @@ $(document).ready(function() {
             interactive: true,
         });
     })();
+    (function addMaxHeightCategoryList() {
+        $('.cards__category-list').each(function (index, el) {
+            var thisFirstItemHeight = $('.cards__category-item:first-child').outerHeight(true);
+            var thisNextItemHeight = $('.cards__category-item:nth-child(2)').outerHeight(true);
+
+            $(this).css('max-height', thisFirstItemHeight + thisNextItemHeight + 29);
+        });
+    })();
+    (function addCardItemHeight() {
+        $('.cards__item').each(function (index, el) {
+           $(this).height($('.cards__wrapper', this).outerHeight());
+        });
+    })();
 
     function wrapUpSliderArrow(arrow, wrapper) {
        $(arrow).wrapAll('<div class="' + wrapper + '"></div>');
