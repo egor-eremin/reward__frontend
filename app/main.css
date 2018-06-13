@@ -1296,6 +1296,10 @@ svg {
     width: 100%;
     left: 0;
     top: 0;
+    transition-property: background-image, background-color, border-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    height: 100%;
 }
 .cards__img {
     padding: 10px;
@@ -1313,6 +1317,7 @@ svg {
     padding-right: 10px;
     padding-left: 10px;
     text-align: center;
+    line-height: 0.9;
 }
 .cards__category-item a {
     font-size: 12px;
@@ -1320,13 +1325,15 @@ svg {
 .category-text {
     text-decoration: underline;
     margin-right: 7px;
+    display: inline-block;
+    margin-bottom: 2px;
 }
 .category-text:hover {
     text-decoration: none;
 }
 .cards__category-list {
     padding: 7px 10px 22px;
-    transition: max-height .3s ease-in-out;
+    transition: max-height .5s ease-in-out;
 }
 .cards__category-items {
     position: relative;
@@ -1342,6 +1349,7 @@ svg {
     background-color: #f2f2f2;
     position: absolute;
     display: block;
+    transition: .5s ease-in-out;
 }
 .number-of-category {
     display: inline-block;
@@ -1354,11 +1362,25 @@ svg {
     margin-top: 4px;
 }
 .cards__wrapper:hover {
-    position: absolute;
-    transition: position .3s ease-in-out .3s;
     margin-left: 10px;
     width: calc(100% - 20px);
+    position: absolute;
+    height: auto;
+    border-color: #deb200;
+    background-color: #ffdd55;
+    background-image: url("../images/cup-background.png");
+    background-repeat: no-repeat;
+    background-position: center 34px;
 }
-.cards__wrapper:hover .cards__category-list {
-    max-height: 999px !important;
+.cards__wrapper:hover .cards__category-items::before {
+    background-color: #ffdd55;
 }
+.cards__category-item:not(:first-child):not(:nth-child(2)) {
+    display: none;
+}
+.cards__wrapper:hover .cards__category-item:not(:first-child):not(:nth-child(2)) {
+    display: block;
+}
+/*.cards__wrapper:hover .cards__category-list {*/
+    /*max-height: 999px !important;*/
+/*}*/
