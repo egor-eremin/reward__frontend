@@ -433,7 +433,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
-    background-color: #fff;
+    background-color: #f5f6fa;
     position: relative;
 }
 html {
@@ -671,18 +671,18 @@ footer {
     margin-bottom: 2.375rem;
     display: flex;
 }
-.underlining {
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-}
+/*.underlining {*/
+    /*border-bottom-width: 4px;*/
+    /*border-bottom-style: solid;*/
+/*}*/
 .underlining_white {
     border-bottom-color: #fff;
 }
-.underlining {
-    padding-bottom: 5px;
-    display: inline-block;
-
-}
+/*.underlining {*/
+    /*padding-bottom: 5px;*/
+    /*display: inline-block;*/
+/**/
+/*}*/
 .footer__menu-item a {
     font-size: 0.875rem;
     text-decoration: underline;
@@ -1263,8 +1263,7 @@ svg {
     border-bottom: 9px solid #f5f6fa;
     position: absolute;
 }
-.section_grey {
-    background-color: #f5f6fa;
+.section {
     padding-top: 3.625rem;
     padding-bottom: 3.625rem;
 }
@@ -1273,6 +1272,7 @@ svg {
     font-size: 1.875rem;
     margin-top:0;
     margin-bottom: 26px;
+    line-height: 1.2;
 }
 .underlining_blue {
     border-bottom-color: #077ba8;
@@ -1288,6 +1288,7 @@ svg {
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 20px;
 }
 .cards__wrapper {
     border-radius: 5px;
@@ -1296,7 +1297,7 @@ svg {
     width: 100%;
     left: 0;
     top: 0;
-    transition-property: background-image, background-color, border-color;
+    transition-property: background-image, background-color, border-color, box-shadow;
     transition-duration: .5s;
     transition-timing-function: ease-in-out;
     height: 100%;
@@ -1318,6 +1319,7 @@ svg {
     padding-left: 10px;
     text-align: center;
     line-height: 0.9;
+    margin-bottom: 6px;
 }
 .cards__category-item a {
     font-size: 12px;
@@ -1371,6 +1373,8 @@ svg {
     background-image: url("../images/cup-background.png");
     background-repeat: no-repeat;
     background-position: center 34px;
+    z-index: 3;
+    box-shadow: 0px 16px 65px 0px rgba(236, 203, 73, 0.69);
 }
 .cards__wrapper:hover .cards__category-items::before {
     background-color: #ffdd55;
@@ -1381,6 +1385,99 @@ svg {
 .cards__wrapper:hover .cards__category-item:not(:first-child):not(:nth-child(2)) {
     display: block;
 }
-/*.cards__wrapper:hover .cards__category-list {*/
-    /*max-height: 999px !important;*/
-/*}*/
+.souvenir {
+    background: url("../images/souvenir-background.png") no-repeat;
+    background-size: cover;
+    margin-top: 10.5625rem;
+}
+.souvenir__wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.col-6 {
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mission {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.2;
+    margin-bottom: 1.875rem;
+}
+.more-info {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-decoration: underline;
+}
+.more-info:hover {
+    text-decoration: none;
+}
+.range__title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1.375rem;
+}
+.underlining {
+    position: relative;
+    padding-bottom: 14px;
+}
+.underlining::before {
+    content: "";
+    height: 4px;
+    width: 49px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.underlining_blue::before {
+    background-color: #077ba8;
+}
+.underlining_white::before {
+    background-color: #fff;
+}
+.underlining_footer {
+    padding-bottom: 11px;
+}
+.underlining_footer::before {
+    width: 51px;
+}
+.souvenir_h2 {
+    max-width: 328px;
+}
+.range {
+    margin-top: 2.75rem;
+}
+.range__item {
+    position: relative;
+    padding-left: 12px;
+    font-size: .875rem;
+}
+.range__item::before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #0078ab;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+.range__list {
+    margin-bottom: 1.4375rem;
+}
+.conditions {
+    margin-left: 8.75rem;
+    display: flex;
+    align-items: flex-start;
+}
+.conditions__col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.conditions__block {
+}
