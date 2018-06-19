@@ -22,22 +22,22 @@ $(document).ready(function() {
             if ($(this).hasClass('open')) {
                 $('.category-menu').removeClass('show');
                 $(this).removeClass('open');
-                $('.close-category-menu').removeClass('active');
+                // $('.close-category-menu').removeClass('active');
             } else {
                 $(this).addClass('open');
                 $('.category-menu').addClass('show');
-                $('.close-category-menu').addClass('active');
+                // $('.close-category-menu').addClass('active');
             }
         });
     })();
-    (function closeCategoryMenu() {
-        $('.close-category-menu').on('click', function (e) {
-           e.preventDefault();
-           $(this).removeClass('active');
-           $('.category-menu').removeClass('show');
-           $('#open-category-menu').removeClass('open');
-        });
-    })();
+    // (function closeCategoryMenu() {
+    //     $('.close-category-menu').on('click', function (e) {
+    //        e.preventDefault();
+    //        $(this).removeClass('active');
+    //        $('.category-menu').removeClass('show');
+    //        $('#open-category-menu').removeClass('open');
+    //     });
+    // })();
     (function initTooltip() {
         $('.tooltip').tooltipster({
             interactive: true,
@@ -59,6 +59,48 @@ $(document).ready(function() {
 
         })
 
+    })();
+    (function addViewportAnimation() {
+        $('.souvenir').viewportChecker({
+            classToAdd: 'animation-cup',
+        });
+    })();
+    (function initNewsSlider() {
+        $('#init-news-slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev news-slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="12" viewBox="0 0 34 12">\n' +
+            '  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>\n' +
+            '<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">\n' +
+            '   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\n' +
+            '      <rdf:Description rdf:about=""/>\n' +
+            '   </rdf:RDF>\n' +
+            '</x:xmpmeta>\n' +
+            '<?xpacket end="w"?></metadata>\n' +
+            '  <path fill="#404040" id="Фигура_24_копия" data-name="Фигура 24 копия" class="cls-1" d="M1399,4463.13h-30.7l5.61-5.13h-2.44l-6.47,6,6.47,6h2.44l-5.61-5.13H1399v-1.74Z" transform="translate(-1365 -4458)"/>\n' +
+            '</svg>\n</button>',
+            nextArrow: '<button type="button" class="slick-next news-slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="12" viewBox="0 0 34 12">\n' +
+            '  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>\n' +
+            '<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">\n' +
+            '   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\n' +
+            '      <rdf:Description rdf:about=""/>\n' +
+            '   </rdf:RDF>\n' +
+            '</x:xmpmeta>\n' +
+            '<?xpacket end="w"?></metadata>\n' +
+            '  <path fill="#404040" id="Фигура_24" data-name="Фигура 24" class="cls-1" d="M1521,4464.87h30.7l-5.61,5.13h2.44l6.47-6-6.47-6h-2.44l5.61,5.13H1521v1.74Z" transform="translate(-1521 -4458)"/>\n' +
+            '</svg></button>',
+        });
+        $('.news-slider .slick-arrow').wrapAll('<div class="news-button-wrapper"></div>');
+        // $('.news-button-wrapper').appendTo('.news-wrapper');
+        $('.news-slide-number').appendTo('.news-button-wrapper');
+    })();
+    (function addCountNewsSlide() {
+        $('#init-news-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            console.log(currentSlide);
+            $('.news-slide-number__this-slide').text(currentSlide + 1);
+
+        });
     })();
 
 
