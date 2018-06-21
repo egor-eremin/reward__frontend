@@ -66,9 +66,22 @@ $(document).ready(function() {
         });
     })();
     (function initNewsSlider() {
+        $('#init-news-slider').on('init', function(event, slick){
+            var countSlide = $('.news-slider .slick-dots li:last-child button').text();
+            var activeSlide = $('.news-slider .slick-dots .slick-active button').text();
+            $('.news-slide-number__count').text(countSlide);
+            $('.news-slide-number__this-slide').text(activeSlide);
+        });
+        $('#init-news-slider').on('afterChange', function(event, slick, currentSlide){
+            var countSlide = $('.news-slider .slick-dots li:last-child button').text();
+            var activeSlide = $('.news-slider .slick-dots .slick-active button').text();
+            $('.news-slide-number__count').text(countSlide);
+            $('.news-slide-number__this-slide').text(activeSlide);
+        });
         $('#init-news-slider').slick({
             slidesToShow: 2,
             slidesToScroll: 2,
+            dots: true,
             arrows: true,
             prevArrow: '<button type="button" class="slick-prev news-slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="12" viewBox="0 0 34 12">\n' +
             '  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>\n' +
@@ -92,14 +105,43 @@ $(document).ready(function() {
             '</svg></button>',
         });
         $('.news-slider .slick-arrow').wrapAll('<div class="news-button-wrapper"></div>');
-        // $('.news-button-wrapper').appendTo('.news-wrapper');
         $('.news-slide-number').appendTo('.news-button-wrapper');
     })();
-    (function addCountNewsSlide() {
-        $('#init-news-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            console.log(currentSlide);
-            $('.news-slide-number__this-slide').text(currentSlide + 1);
-
+    (function addModalCalbackForm() {
+        $('.callback').magnificPopup({
+            type: 'inline',
+            items: {
+                src: '.callback-popup',
+            },
+            showCloseBtn: false,
+        });
+        $(document).on('click', '.close-button', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        })
+    })();
+    (function addEnterModal() {
+        $('.enter').magnificPopup({
+            type: 'inline',
+            items: {
+                src: '.enter-popup',
+            },
+            showCloseBtn: false,
+        });
+    })();
+    (function editErrorMessage() {
+        jQuery.extend(jQuery.validator.messages, {
+            required: "Это поле обязательно для заполнения",
+            minlength: "Введите корректный телефон",
+            email: "Введите корректный email",
+        });
+    })();
+    (function addPhoneMask() {
+        $('.phone-input').mask('+7 (000)-000-00-00');
+    })();
+    (function addValidationCallbackForm() {
+        $('#callback-form').validate({
+                required: true,
         });
     })();
 
