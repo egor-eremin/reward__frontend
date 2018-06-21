@@ -1876,5 +1876,10 @@ svg {
 }
 .eye-icon {
     position: absolute;
-    right: ;
+    right: 17px;
+    top: 50%;
+    cursor: pointer;
+}
+.input-password {
+    padding-right: 64px;
 }

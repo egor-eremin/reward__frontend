@@ -141,11 +141,32 @@ $(document).ready(function() {
     })();
     (function addValidationCallbackForm() {
         $('#callback-form').validate({
-                required: true,
+            required: true,
+        });
+    })();
+    (function toggleTypeInput() {
+        $('.eye-icon').mousedown(function () {
+            myFunction();
+        });
+        $('.eye-icon').mouseup(function () {
+            myFunction();
+        });
+    })();
+    (function validateEnterForm() {
+        $('#enter-form').validate({
+            required: true,
         });
     })();
 
 
+    function myFunction() {
+        var thisInput = document.getElementById("password");
+        if (thisInput.type === "password") {
+            thisInput.type = "text";
+        } else {
+            thisInput.type = "password";
+        }
+    }
     function wrapUpSliderArrow(arrow, wrapper) {
        $(arrow).wrapAll('<div class="' + wrapper + '"></div>');
     };
