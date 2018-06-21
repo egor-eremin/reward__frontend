@@ -157,6 +157,24 @@ $(document).ready(function() {
             required: true,
         });
     })();
+    (function initRangeSlider() {
+        var slider = document.getElementById('custom-range');
+
+        noUiSlider.create(slider, {
+            start: [20, 80],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 100
+            }
+        });
+    })();
+    (function addMaskForIntervalRange() {
+        // $('.input-interval').mask('[] р.', {reverse: true});
+        $('.input-interval').mask('0#', {
+        });
+    })();
+
 
 
     function myFunction() {
