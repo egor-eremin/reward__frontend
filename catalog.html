@@ -16,6 +16,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="app/css/animate.css" rel="stylesheet">
     <link href="app/css/nouislider.css" rel="stylesheet">
+    <link href="app/css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
     <link href="app/main.css" rel="stylesheet">
 </head>
 <body>
@@ -4000,18 +4001,173 @@
                                         <div class="filter__interval-step">
                                             <label class="interval-label">
                                                 <span>от</span>
-                                                <input type="text" class="input-interval">
+                                                <input type="text" class="input-interval" id="input-min">
+                                                <span class="rub">&#8381;</span>
                                             </label>
                                         </div>
                                         <div class="filter__interval-step">
                                             <label class="interval-label">
                                                 <span>до</span>
-                                                <input type="text" class="input-interval">
+                                                <input type="text" class="input-interval" id="input-max">
+                                                <span class="rub">&#8381;</span>
                                             </label>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="filter__item">
+                                    <div class="filter__title">
+                                        Параметр
+                                    </div>
+                                    <div class="filter__wrapper custom-select filter-select-wrapper custom-scroll" id="custom-filter-scroll">
+                                        <select class="filter__select" name="select-type" id="filter-select">
+                                            <option></option>
+                                            <option>
+                                                Параметр 1
+                                            </option>
+                                            <option>
+                                                Параметр 2
+                                            </option>
+                                            <option>
+                                                Параметр 3
+                                            </option>
+                                            <option>
+                                                Параметр 4
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="filter__item">
+                                    <div class="filter__title">
+                                        Тип таблички
+                                    </div>
+                                    <div class="filter__wrapper mCustomScrollbar filter__wrapper_checkbox custom-scroll">
+                                        <label class="custom-checkbox custom-checkbox_filter">
+                                            <input class="custom-checkbox__input" name="type-1" type="checkbox">
+                                            <span class="custom-checkbox__checkbox"></span>
+                                            <span class="custom-checkbox__text custom-checkbox__text_filter">
+                                                50x16(T1)
+                                            </span>
+                                        </label>
+                                        <label class="custom-checkbox custom-checkbox_filter">
+                                            <input class="custom-checkbox__input" name="type-2" type="checkbox">
+                                            <span class="custom-checkbox__checkbox"></span>
+                                            <span class="custom-checkbox__text custom-checkbox__text_filter">
+                                                60x20(T2)
+                                            </span>
+                                        </label>
+                                        <label class="custom-checkbox custom-checkbox_filter">
+                                            <input class="custom-checkbox__input" name="type-3" type="checkbox">
+                                            <span class="custom-checkbox__checkbox"></span>
+                                            <span class="custom-checkbox__text custom-checkbox__text_filter">
+                                                60x24(T3)
+                                            </span>
+                                        </label>
+                                        <label class="custom-checkbox custom-checkbox_filter">
+                                            <input class="custom-checkbox__input" name="type-4" type="checkbox">
+                                            <span class="custom-checkbox__checkbox"></span>
+                                            <span class="custom-checkbox__text custom-checkbox__text_filter">
+                                                50x16(T1)
+                                            </span>
+                                        </label>
+                                        <label class="custom-checkbox custom-checkbox_filter">
+                                            <input class="custom-checkbox__input" name="type-5" type="checkbox">
+                                            <span class="custom-checkbox__checkbox"></span>
+                                            <span class="custom-checkbox__text custom-checkbox__text_filter">
+                                                60x20(T2)
+                                            </span>
+                                        </label>
+                                        <label class="custom-checkbox custom-checkbox_filter">
+                                            <input class="custom-checkbox__input" name="type-6" type="checkbox">
+                                            <span class="custom-checkbox__checkbox"></span>
+                                            <span class="custom-checkbox__text custom-checkbox__text_filter">
+                                                60x24(T3)
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="filter__item">
+                                    <div class="filter__title">
+                                        Тип
+                                    </div>
+                                    <div class="filter__wrapper mCustomScrollbar filter__wrapper_checkbox custom-scroll custom-scroll_radio">
+                                        <label class="custom-radio">
+                                            <input class="custom-radio__input" name="type" type="radio">
+                                            <span class="custom-radio__checkbox"></span>
+                                            <span class="custom-radio__text">
+                                                Первый
+                                            </span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input class="custom-radio__input" name="type" type="radio">
+                                            <span class="custom-radio__checkbox"></span>
+                                            <span class="custom-radio__text">
+                                                Второй
+                                            </span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input class="custom-radio__input" name="type" type="radio">
+                                            <span class="custom-radio__checkbox"></span>
+                                            <span class="custom-radio__text">
+                                                Третий
+                                            </span>
+                                        </label>
+                                        <label class="custom-radio">
+                                            <input class="custom-radio__input" name="type" type="radio">
+                                            <span class="custom-radio__checkbox"></span>
+                                            <span class="custom-radio__text">
+                                                Четвертый
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="filter__item filter__item_submit">
+                                    <button class="button button_filter button-send button_hover">
+                                        Применить
+                                    </button>
+                                </div>
                             </form>
+                        </div>
+                        <div class="download-catalog">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="201.969" height="313" viewBox="0 0 201.969 313">
+                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                            <rdf:Description rdf:about=""/>
+                                        </rdf:RDF>
+                                    </x:xmpmeta>
+                                    <?xpacket end="w"?></metadata>
+                                <defs>
+                                    <style>
+                                        .download-cup-svg {
+                                            fill: #e7c746;
+                                            fill-rule: evenodd;
+                                            opacity: 0.8;
+                                        }
+                                    </style>
+                                </defs>
+                                <path class="download-cup-svg" d="M544.4,1721.3c40.525-11.94,53.887-83.26,54.458-86.4a8.288,8.288,0,0,0-5.272-9.23l-40.525-15.19c-4.558-18.57-18.054-38.49-55.073-38.49s-50.522,19.92-55.076,38.48l-40.522,15.19a8.306,8.306,0,0,0-5.272,9.24c0.571,3.14,13.927,74.46,54.458,86.39,8.4,19.14,21.724,36.62,38.065,41.21v48.87H457.693a8.325,8.325,0,0,0-8.347,8.3v20.21H431.175a8.328,8.328,0,0,0-8.347,8.31v28.5a8.319,8.319,0,0,0,8.347,8.3H564.8a8.319,8.319,0,0,0,8.347-8.3v-28.5a8.328,8.328,0,0,0-8.347-8.31H546.633v-20.21a8.325,8.325,0,0,0-8.347-8.3H506.335V1762.5C522.68,1757.92,536,1740.43,544.4,1721.3Zm12.053,147.1H439.523v-11.91h116.93v11.91Zm-26.518-28.51H466.041v-11.91h63.9v11.91h0Zm22.108-141.82a83.352,83.352,0,0,0,2.156-17.6v-51.83l26.8,10.05C576.978,1655.76,567.405,1684.1,552.043,1698.07Zm-54.055-109.48c19.4,0,31.366,6.33,36.922,19.75H461.066C466.622,1594.92,478.585,1588.59,497.988,1588.59Zm-83.017,50.1,26.8-10.05v51.83a83.719,83.719,0,0,0,2.157,17.61C428.568,1684.1,419,1655.77,414.971,1638.69Zm43.5,41.78v-55.53h79.04v55.53c0,23.88-19.92,66.62-39.52,66.62S458.468,1704.35,458.468,1680.47Z" transform="translate(-397 -1572)"/>
+                            </svg>
+                            <a href="#" download class="button button-send button_hover">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="26" viewBox="0 0 16 26">
+                                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                <rdf:Description rdf:about=""/>
+                                            </rdf:RDF>
+                                        </x:xmpmeta>
+                                        <?xpacket end="w"?></metadata>
+                                    <defs>
+                                        <style>
+                                            .download-icon {
+                                                fill: #2d2d2d;
+                                                fill-rule: evenodd;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <path class="download-icon" d="M402.285,1757.69a1.018,1.018,0,0,0,1.465-.01l5.535-5.78a1.054,1.054,0,1,0-1.471-1.51l-3.553,3.65c-0.121.12-.221,0.08-0.221-0.1v-12.02a1.079,1.079,0,0,0-.835-1.08,1.049,1.049,0,0,0-1.246,1.04v11.96c0,0.26-.1.32-0.265,0.14l-3.508-3.59a1.054,1.054,0,1,0-1.471,1.51Zm4.889-9.31h1.044a2.812,2.812,0,0,0,2.782-2.85v-10.68a2.82,2.82,0,0,0-2.785-2.85H397.784a2.82,2.82,0,0,0-2.784,2.85v10.68a2.812,2.812,0,0,0,2.782,2.85h1.044a1.065,1.065,0,0,0,0-2.13h-1.044a0.707,0.707,0,0,1-.695-0.72v-10.68a0.7,0.7,0,0,1,.7-0.71h10.431a0.7,0.7,0,0,1,.7.71v10.68a0.706,0.706,0,0,1-.695.72h-1.044A1.065,1.065,0,0,0,407.174,1748.38Z" transform="translate(-395 -1732)"/>
+                                </svg>
+                                Скачать каталог PDF
+                            </a>
                         </div>
                     </div>
                     <div class="right-col"></div>
@@ -4276,6 +4432,8 @@
 <script src="app/js/jquery.nav.js"></script>
 <script src="app/js/jquery.slicknav.min.js"></script>
 <script src="app/js/nouislider.min.js"></script>
+<script src="app/js/wNumb.js"></script>
+<script src="app/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="app/js/main.js"></script>
 </body>
 </html>

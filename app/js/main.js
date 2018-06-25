@@ -157,26 +157,61 @@ $(document).ready(function() {
             required: true,
         });
     })();
+
     (function initRangeSlider() {
         var slider = document.getElementById('custom-range');
+        var minMeaning = document.getElementById('input-min');
+        var maxMeaning = document.getElementById('input-max');
 
         noUiSlider.create(slider, {
-            start: [20, 80],
+            start: [0, 100000],
             connect: true,
+            step: 1,
             range: {
                 'min': 0,
-                'max': 100
+                'max': 100000
+            },
+            format: wNumb({
+                decimals: 0,
+                thousand: ' ',
+            })
+        });
+
+        slider.noUiSlider.on('update', function( values, handle ) {
+
+            var value = values[handle];
+
+            if ( handle ) {
+                maxMeaning.value = value;
+            } else {
+                minMeaning.value = value;
             }
         });
+
+        minMeaning.addEventListener('change', function(){
+            slider.noUiSlider.set([this.value, null]);
+        });
+
+        maxMeaning.addEventListener('change', function(){
+            slider.noUiSlider.set([null, this.value]);
+        });
+
     })();
     (function addMaskForIntervalRange() {
-        // $('.input-interval').mask('[] р.', {reverse: true});
-        $('.input-interval').mask('0#', {
-        });
+        $('.input-interval').mask('# ##0', {reverse: true});
+    })();
+    (function initCustomSelect() {
+        CustomSelect('#filter-select', 'Все', '.filter-select-wrapper');
     })();
 
 
-
+    function CustomSelect(main_selector,select_placeholder,dr_parent) {
+        $(main_selector).select2({
+            placeholder: select_placeholder,
+            allowClear: true,
+            dropdownParent:$(dr_parent),
+        });
+    }
     function myFunction() {
         var thisInput = document.getElementById("password");
         if (thisInput.type === "password") {
