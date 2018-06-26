@@ -203,6 +203,9 @@ $(document).ready(function() {
     (function initCustomSelect() {
         CustomSelect('#filter-select', 'Все', '.filter-select-wrapper');
     })();
+    (function addCustomSortSelect() {
+        CustomSelect('#custom-sort-select', 'Сортировать', '.sort-select-wrapper');
+    })();
 
 
     function CustomSelect(main_selector,select_placeholder,dr_parent) {
