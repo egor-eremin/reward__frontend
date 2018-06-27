@@ -206,6 +206,22 @@ $(document).ready(function() {
     (function addCustomSortSelect() {
         CustomSelect('#custom-sort-select', 'Сортировать', '.sort-select-wrapper');
     })();
+    (function toggleClass() {
+        $('.wish-list').on('click', function () {
+          $(this).toggleClass('add-to-wish-list');
+        });
+
+        $('.comparison').on('click', function () {
+            $(this).toggleClass('add-to-comparison');
+        });
+    })();
+    (function initViewportChecker() {
+        $('.individual-order__animate-img').viewportChecker({
+            classToRemove: 'hidden',
+            classToAdd: 'animate',
+        });
+    })();
+
 
 
     function CustomSelect(main_selector,select_placeholder,dr_parent) {

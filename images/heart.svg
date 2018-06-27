@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97" viewBox="0 0 27 23.97">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .heart-icon {
+        fill: #d2d2d2;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="heart-icon" d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z" transform="translate(-681 -1014)"/>
+</svg>
