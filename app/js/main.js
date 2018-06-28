@@ -236,6 +236,8 @@ $(document).ready(function() {
             slidesToScroll:1,
             infinite: false,
             asNavFor: '#card-slider',
+            prevArrow: '<button type="button" class="slick-prev"><img src="../images/arrow-prev.png" alt="arrow-left"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="../images/arrow-next.png" alt="arrow-right"></button>',
         });
     })();
 
