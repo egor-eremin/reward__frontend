@@ -3998,7 +3998,7 @@
                     <div class="right-col">
                         <div class="card-block">
                             <div class="card-block__gallery">
-                                <div class="card-block__main-slider">
+                                <div id="card-slider" class="card-block__main-slider">
                                     <div class="card-block__slider-item">
                                         <a href="images/card-main-slider-item.png" class="card-block-popup">
                                             <img src="images/card-main-slider-item.png" alt="Кубок Виста">
@@ -4020,7 +4020,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="card-block__prev-slider">
+                                <div id="card-prev-slider" class="card-block__prev-slider">
                                     <div class="card-block__prev-slider-item">
                                         <img src="images/card-prev-slider-item.png" alt="Кубок Виста">
                                     </div>
@@ -4065,15 +4065,15 @@
                                             золото
                                         </div>
                                     </div>
-                                    <div class="characteristics__item">
+                                    <div class="characteristics__item characteristics__item_color">
                                         <div class="characteristics__name">
                                             Цвет основы:
                                         </div>
                                         <div class="characteristics__value">
-                                            <div class="characteristics__value-color"></div>
-                                            <div class="characteristics__value-color"></div>
-                                            <div class="characteristics__value-color"></div>
-                                            <div class="characteristics__value-color"></div>
+                                            <div class="characteristics__value-color" style="background: #ffaa00;"></div>
+                                            <div class="characteristics__value-color" style="background: #494234;"></div>
+                                            <div class="characteristics__value-color" style="background: #0078ab;"></div>
+                                            <div class="characteristics__value-color active" style="background: #dbdbdb;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -4090,8 +4090,24 @@
                                 </div>
                                 <div class="is-available">
                                     Есть в наличии: 12 штук
+                                    <span class="tooltip">
+                                            <span class="availability">
+                                                <span class="availability__item">
+                                                    <a href="#" class="availability__link">в Иркутске</a>
+                                                    <span class="availability__quantity">12</span>
+                                                </span>
+                                                <span class="availability__item">
+                                                    <a href="#" class="availability__link">в Улан-Удэ</a>
+                                                    <span class="availability__quantity">10</span>
+                                                </span>
+                                            </span>
+                                            <span class="delivery-text">
+                                                доставка до Иркутска 1 ден
+                                                под заказ, доставка 7 дней
+                                            </span>
+                                        </span>
                                 </div>
-                                <button class="button button-order button_hover">
+                                <button class="button button_order-in-card button_big button_hover">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
                                         <metadata><!--?xpacket begin="&#65279;" id="W5M0MpCehiHzreSzNTczkc9d"?-->
                                             <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">

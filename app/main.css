@@ -581,7 +581,7 @@ footer {
     border-radius: 25px;
     border: 2px solid #ffeb9c;
     font-weight: 600;
-    display: inline-flex;
+    display: flex;
     padding: 0.6875rem 2.6875rem;
     align-items: center;
     position: relative;
@@ -2582,7 +2582,7 @@ svg {
     padding-left: 10px;
 }
 .card-block__main-slider, .card-block__prev-slider {
-    display: none;
+    /*display: none;*/
 }
 .h1-title {
     margin-top: 0;
@@ -2636,4 +2636,191 @@ svg {
     width: 22px;
     height: 22px;
     border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.characteristics__value {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+.characteristics__item_color {
+    align-items: center;
+    justify-content: flex-start;
+}
+.characteristics__value-color:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.characteristics__value-color + .characteristics__value-color {
+    margin-left: 1.25rem;
+}
+.characteristics__value-color.active {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+.characteristics__value-color.active::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.price-card {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1.625rem;
+}
+.price-card__label {
+    font-weight: 300;
+    line-height: 1.375;
+    color: #8d8d8d;
+    flex-shrink: 0;
+}
+.price-card__price {
+    flex-shrink: 0;
+    font-size: 1.875rem;
+    line-height: 0.73;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-left: 14px;
+}
+.how-to-get {
+    font-size: 0.875rem;
+    line-height: normal;
+    color: #2d2d2d;
+    text-decoration: underline;
+    transform: translateY(-15px);
+    margin-left: 14px;
+}
+.how-to-get:hover {
+    text-decoration: none;
+}
+.characteristics {
+    margin-bottom: 2.125rem;
+}
+.is-available {
+    font-weight: 300;
+    line-height: 1.375;
+    padding-left: 21px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 1.125rem;
+}
+.is-available::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #38dc5b;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.tooltip {
+    background-color: #ffdd55;
+    box-shadow: 0px 27px 46px 0px rgba(178, 142, 0, 0.51);
+    position: absolute;
+    z-index: 100;
+    border-radius: 5px;
+    width: 238px;
+    padding: 1.3125rem 1.5625rem;
+    display: block;
+    right: 0;
+    margin-right: -13px;
+    margin-top: -33px;
+    transform: translate(100%, 0);
+    transition: .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.availability__item {
+    display: flex;
+    align-items: baseline;
+}
+.availability__link {
+    font-size: 12px;
+    text-decoration: underline;
+    margin-right: 12px;
+}
+.availability__link:hover {
+    text-decoration: none;
+}
+.availability__quantity {
+    display: block;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #303030;
+    padding: 1px 8px;
+    font-size: 12px;
+}
+.delivery-text {
+    font-size: 12px;
+    display: block;
+}
+.availability__item + .availability__item {
+    margin-top: 6px;
+}
+.availability {
+    display: block;
+    margin-bottom: 8px;
+}
+.is-available::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    transform: translateX(13px);
+    /*margin-right: -13px;*/
+    border: 5px solid transparent;
+    border-right: 9px solid #ffdd55;
+    z-index: 100;
+    top: 6px;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.is-available:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+.is-available:hover > .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+.button_order-in-card {
+    width: auto;
+    padding: 0.875rem 2.0625rem;
+}
+.button_order-in-card svg {
+    margin-right: 12px;
+}
+.useful-link {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.1875rem;
+}
+.useful-link a {
+    font-size: 12px;
+    line-height: 1.83;
+    text-decoration: underline;
+    color: #0055cc;
+}
+.useful-link a:hover {
+    text-decoration: none;
+}
+.card-block-popup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 340px;
+}
+.card-block-popup img {
+    max-height: 100%;
 }

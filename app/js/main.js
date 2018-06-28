@@ -159,43 +159,45 @@ $(document).ready(function() {
     })();
 
     (function initRangeSlider() {
-        var slider = document.getElementById('custom-range');
-        var minMeaning = document.getElementById('input-min');
-        var maxMeaning = document.getElementById('input-max');
+        if ($("div").is('#custom-range')) {
+            console.log('sdf');
+            var slider = document.getElementById('custom-range');
+            var minMeaning = document.getElementById('input-min');
+            var maxMeaning = document.getElementById('input-max');
 
-        noUiSlider.create(slider, {
-            start: [0, 100000],
-            connect: true,
-            step: 1,
-            range: {
-                'min': 0,
-                'max': 100000
-            },
-            format: wNumb({
-                decimals: 0,
-                thousand: ' ',
-            })
-        });
+            noUiSlider.create(slider, {
+                start: [0, 100000],
+                connect: true,
+                step: 1,
+                range: {
+                    'min': 0,
+                    'max': 100000
+                },
+                format: wNumb({
+                    decimals: 0,
+                    thousand: ' ',
+                })
+            });
 
-        slider.noUiSlider.on('update', function( values, handle ) {
+            slider.noUiSlider.on('update', function( values, handle ) {
 
-            var value = values[handle];
+                var value = values[handle];
 
-            if ( handle ) {
-                maxMeaning.value = value;
-            } else {
-                minMeaning.value = value;
-            }
-        });
+                if ( handle ) {
+                    maxMeaning.value = value;
+                } else {
+                    minMeaning.value = value;
+                }
+            });
 
-        minMeaning.addEventListener('change', function(){
-            slider.noUiSlider.set([this.value, null]);
-        });
+            minMeaning.addEventListener('change', function(){
+                slider.noUiSlider.set([this.value, null]);
+            });
 
-        maxMeaning.addEventListener('change', function(){
-            slider.noUiSlider.set([null, this.value]);
-        });
-
+            maxMeaning.addEventListener('change', function(){
+                slider.noUiSlider.set([null, this.value]);
+            });
+        }
     })();
     (function addMaskForIntervalRange() {
         $('.input-interval').mask('# ##0', {reverse: true});
@@ -219,6 +221,21 @@ $(document).ready(function() {
         $('.individual-order__animate-img').viewportChecker({
             classToRemove: 'hidden',
             classToAdd: 'animate',
+        });
+    })();
+    (function initCardSlider() {
+        $('#card-slider').slick({
+            fade: true,
+            arrows: false,
+            infinite: false,
+            asNavFor: '#card-prev-slider',
+        });
+
+        $('#card-prev-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll:1,
+            infinite: false,
+            asNavFor: '#card-slider',
         });
     })();
 
