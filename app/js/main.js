@@ -240,7 +240,47 @@ $(document).ready(function() {
             nextArrow: '<button type="button" class="slick-next"><img src="../images/arrow-next.png" alt="arrow-right"></button>',
         });
     })();
+    (function customizeInputNumber() {
+        jQuery('.quantity').each(function() {
+            var spinner = jQuery(this),
+                input = spinner.find('input[type="number"]'),
+                btnPlus = spinner.find('.quantity-button_plus'),
+                btnMinus = spinner.find('.quantity-button_minus'),
+                min = input.attr('min'),
+                max = input.attr('max');
 
+            btnPlus.click(function () {
+                var oldValue = parseFloat(input.val());
+                if (oldValue >= max) {
+                    var newVal = oldValue;
+                } else {
+                    var newVal = oldValue + 1;
+                }
+                spinner.find("input").val(newVal);
+                spinner.find("input").trigger("change");
+            });
+
+            btnMinus.click(function () {
+                var oldValue = parseFloat(input.val());
+                if (oldValue <= min) {
+                    var newVal = oldValue;
+                } else {
+                    var newVal = oldValue - 1;
+                }
+                spinner.find("input").val(newVal);
+                spinner.find("input").trigger("change");
+            });
+        });
+    })();
+    // (function initMusk() {
+    //     $('.quantity input').mask("a", {
+    //         translation: {
+    //             'a': {
+    //                 pattern: '^[1-9][0-9]*$',
+    //             }
+    //         }
+    //     });
+    // })();
 
 
     function CustomSelect(main_selector,select_placeholder,dr_parent) {
