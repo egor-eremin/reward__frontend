@@ -3191,3 +3191,12 @@ svg {
 .aside-lk {
     width: 25%;
 }
+.aside-lk__menu-item a {
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+    height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
