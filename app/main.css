@@ -3057,3 +3057,45 @@ svg {
     font-size: 0.875rem;
     margin-left: 2.6875rem;
 }
+.description-cup__title {
+    display: flex;
+    align-items: center;
+}
+.description-cup__tab-switch {
+    font-size: 1.125rem;
+    line-height: 1.22;
+    font-weight: 300;
+    border-bottom: 2px solid #b0b0b3;
+    transition: border-bottom-color .3s ease-in-out;
+}
+.description-cup__tab-switch svg {
+    display: none;
+}
+.description-cup__tab-switch:hover {
+    border-bottom-color: transparent;
+}
+.description-cup__tab-switch[aria-selected="true"] {
+    font-weight: 500;
+    border: 2px solid #ffdd55;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    background-color: #fff;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+}
+.description-cup__tab-switch[aria-selected="true"] svg {
+    display: block;
+    margin-right: 10px;
+}
+.description-cup__tab-switch[aria-selected="true"]:hover {
+    background-color: #ffdd55;
+}
+.description-cup {
+    margin-top: 5.875rem;
+}
+.description-cup__title-item {
+    margin-right: 44px;
+}
