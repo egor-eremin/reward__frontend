@@ -1648,6 +1648,7 @@ svg {
 }
 .main-header {
     background-color: #fff;
+    overflow: hidden;
 }
 .news-wrapper {
     position: relative;
@@ -3060,6 +3061,7 @@ svg {
 .description-cup__title {
     display: flex;
     align-items: center;
+    margin-bottom: 3.4375rem;
 }
 .description-cup__tab-switch {
     font-size: 1.125rem;
@@ -3095,7 +3097,97 @@ svg {
 }
 .description-cup {
     margin-top: 5.875rem;
+    margin-bottom: 3.5625rem;
 }
 .description-cup__title-item {
     margin-right: 44px;
+}
+.description-text p {
+    margin-bottom: .9375rem;
+    width: 100%;
+}
+.description-text p, .description-text li {
+    font-size: .875rem;
+    line-height: 1.7;
+}
+.description-text li {
+    padding-left: 5.75rem;
+    position: relative;
+    margin-bottom: 1.5625rem;
+}
+.description-text li::before {
+    content: "";
+    width: 4.4375rem;
+    position: absolute;
+    height: 2px;
+    background-color: #b3b3b3;
+    left: 0;
+    top: 11px;
+}
+.examples-slider__prev .slick-arrow {
+    background-color: transparent;
+    top: 50%;
+    position: absolute;
+}
+.examples-slider__prev .slick-prev {
+    left: -24px;
+    transform: translate(-100%, -50%);
+}
+.examples-slider__prev .slick-next {
+    right: -24px;
+    transform: translate(100%, -50%);
+}
+.examples-slider__prev {
+    width: calc(100% - 104px);
+    margin: 0 auto;
+}
+.examples-slider__prev-item, .examples-slider__main-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.examples-slider__main {
+    margin-bottom: 36px;
+    position: relative;
+}
+.examples-slider_slider-nav {
+    width: 242px;
+    background-color: #ffdd55;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    font-weight: 500;
+    line-height: 1.375;
+    position: absolute;
+    left: 50%;
+    bottom: 27px;
+    transform: translate(-50%, 0);
+}
+.examples-slider__button-prev {
+    margin-left: 18px;
+}
+.examples-slider__button-next {
+    margin-right: 18px;
+}
+.examples-slider__button-prev, .examples-slider__button-next {
+    display: flex;
+    cursor: pointer;
+}
+.examples-slider__main .slick-dots {
+    display: none !important;
+}
+.slide-item {
+    margin-right: 3px;
+}
+.slide-quantity {
+    margin-left: 3px;
+}
+.personal-area {
+    margin-top: 3.5rem;
+}
+.aside-lk {
+    width: 25%;
 }

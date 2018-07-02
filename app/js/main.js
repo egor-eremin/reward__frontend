@@ -277,6 +277,81 @@ $(document).ready(function() {
             addTabs('#description-tabbed');
         }
     })();
+    (function initExampleSlider() {
+        $('.example-tab').on('click', function () {
+            $('.examples-slider__main').on('init', function(event, slick){
+                var countSlide = $('.examples-slider__main .slick-dots li:last-child button').text();
+                var activeSlide = $('.examples-slider__main .slick-dots .slick-active button').text();
+                $('.slide-quantity').text(countSlide);
+                $('.slide-item').text(activeSlide);
+            });
+            $('.examples-slider__main').on('afterChange', function(event, slick, currentSlide){
+                var countSlide = $('.examples-slider__main .slick-dots li:last-child button').text();
+                var activeSlide = $('.examples-slider__main .slick-dots .slick-active button').text();
+                $('.slide-quantity').text(countSlide);
+                $('.slide-item').text(activeSlide);
+            });
+            $('.examples-slider__button-prev').click(function () {
+                $('.examples-slider__prev .slick-prev').trigger('click');
+            });
+            $('.examples-slider__button-next').click(function () {
+                $('.examples-slider__prev .slick-next').trigger('click');
+            });
+            $('.examples-slider__main').slick({
+                fade: true,
+                arrows: false,
+                infinite: true,
+                dots: true,
+                adaptiveHeight: true,
+                asNavFor: '.examples-slider__prev',
+            });
+            $('.examples-slider__prev').slick({
+                slidesToShow: 6,
+                slidesToScroll:1,
+                infinite: true,
+                asNavFor: '.examples-slider__main',
+                focusOnSelect: true,
+                prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="16.969" height="27" viewBox="0 0 16.969 27">\n' +
+                '  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>\n' +
+                '<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">\n' +
+                '   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\n' +
+                '      <rdf:Description rdf:about=""/>\n' +
+                '   </rdf:RDF>\n' +
+                '</x:xmpmeta>\n' +
+                '<?xpacket end="w"?></metadata>\n' +
+                '<defs>\n' +
+                '    <style>\n' +
+                '      .exmpale-prev {\n' +
+                '        fill: #2d2d2d;\n' +
+                '        fill-rule: evenodd;\n' +
+                '      }\n' +
+                '    </style>\n' +
+                '  </defs>\n' +
+                '  <path class="exmpale-prev" d="M748.147,1080.36l-9.267-8.86,9.268-8.86a2.7,2.7,0,0,0-1.976-4.64h0a2.868,2.868,0,0,0-1.975.78l-11.4,10.9a2.492,2.492,0,0,0,0,3.63l11.4,10.9a2.833,2.833,0,0,0,1.975.79h0A2.7,2.7,0,0,0,748.147,1080.36Z" transform="translate(-732.031 -1058)"/>\n' +
+                '</svg></button>',
+                nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="16.94" height="27" viewBox="0 0 16.94 27">\n' +
+                '  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>\n' +
+                '<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">\n' +
+                '   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">\n' +
+                '      <rdf:Description rdf:about=""/>\n' +
+                '   </rdf:RDF>\n' +
+                '</x:xmpmeta>\n' +
+                '<?xpacket end="w"?></metadata>\n' +
+                '<defs>\n' +
+                '    <style>\n' +
+                '      .example-next {\n' +
+                '        fill: #2d2d2d;\n' +
+                '        fill-rule: evenodd;\n' +
+                '      }\n' +
+                '    </style>\n' +
+                '  </defs>\n' +
+                '  <path class="example-next" d="M1533.88,1082.36l9.23-8.86-9.23-8.86a2.7,2.7,0,0,1,1.97-4.64h0a2.862,2.862,0,0,1,1.97.78l11.36,10.9a2.5,2.5,0,0,1,0,3.63l-11.36,10.9a2.826,2.826,0,0,1-1.97.79h0A2.7,2.7,0,0,1,1533.88,1082.36Z" transform="translate(-1533.03 -1060)"/>\n' +
+                '</svg></button>',
+            });
+            $('.examples-slider_slider-nav').appendTo('.examples-slider__main');
+        });
+
+    })();
     // (function initMusk() {
     //     $('.quantity input').mask("a", {
     //         translation: {
