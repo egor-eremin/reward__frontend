@@ -157,6 +157,11 @@ $(document).ready(function() {
             required: true,
         });
     })();
+    (function validateEnterForm() {
+        $('#personal-form').validate({
+            required: true,
+        });
+    })();
 
     (function initRangeSlider() {
         if ($("div").is('#custom-range')) {

@@ -4500,7 +4500,7 @@
                 <div class="personal-area">
                     <aside class="aside-lk">
                         <ul class="aside-lk__menu">
-                            <li class="aside-lk__menu-item active">
+                            <li class="aside-lk__menu-item">
                                 <a href="#">
                                     Общие данные
                                     <span class="aside-lk__icon">
@@ -4525,7 +4525,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li class="aside-lk__menu-item">
+                            <li class="aside-lk__menu-item active">
                                 <a href="#">
                                     Реквизиты
                                     <span class="aside-lk__icon">
@@ -4582,43 +4582,18 @@
                     </aside>
                     <div class="personal-right-block">
                         <div class="personal-area__date">
-                            <form action="#" id="personal-form">
+                            <form action="#" id="requisites-form">
                                 <div class="form-item">
-                                    <label class="form-label" for="personal-mail">
-                                        E-mail
+                                    <label class="form-label" for="company-name">
+                                        Название компании
                                     </label>
-                                    <input type="email" class="form-input" required name="user-mail" id="personal-mail">
+                                    <input type="text" class="form-input" name="name-company" id="company-name">
                                 </div>
                                 <div class="form-item">
-                                    <label class="form-label" for="personal-phone">
-                                        Телефон
+                                    <label class="form-label" for="company-inn">
+                                        ИНН
                                     </label>
-                                    <input class="form-input phone-input" minlength="18" type="text" required name="user-phone"
-                                           id="personal-phone">
-                                </div>
-                                <div class="form-item">
-                                    <label class="form-label" for="street">
-                                        Улица
-                                    </label>
-                                    <input type="text" class="form-input" name="address-street" id="street">
-                                </div>
-                                <div class="form-item">
-                                    <label class="form-label" for="house">
-                                        Дом
-                                    </label>
-                                    <input type="text" class="form-input" name="address-house" id="house">
-                                </div>
-                                <div class="form-item">
-                                    <label class="form-label" for="apartment">
-                                        Квартира\офис
-                                    </label>
-                                    <input type="text" class="form-input" name="address-apartment" id="apartment">
-                                </div>
-                                <div class="form-item">
-                                    <label class="form-label" for="personal-name">
-                                        Имя контактного лица
-                                    </label>
-                                    <input type="text" class="form-input" required name="user-name" id="personal-name">
+                                    <input type="text" class="form-input" name="inn-company" id="company-inn">
                                 </div>
                             </form>
                         </div>
@@ -4628,7 +4603,7 @@
                                 <li>подтверждать персональные данные;</li>
                                 <li>задавать вопросы в Службу поддержки абонентов через специальную форму;</li>
                             </ul>
-                            <button form="personal-form" type="submit" class="button send-personal-form button-send button_hover">Сохранить
+                            <button form="requisites-form" type="submit" class="button send-personal-form button-send button_hover">Сохранить
                                 <span class="send-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="9.34" height="15" viewBox="0 0 9.34 15">
                                       <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
