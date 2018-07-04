@@ -765,7 +765,7 @@ svg {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 .development__text {
     font-size: 0.875rem;
@@ -1649,7 +1649,6 @@ svg {
 }
 .main-header {
     background-color: #fff;
-    overflow: hidden;
 }
 .news-wrapper {
     position: relative;
