@@ -53,7 +53,6 @@ $(document).ready(function() {
             });
 
             $(this).mouseout(function () {
-                console.log('asd');
                 thisParents.css('height','auto');
             });
 
@@ -120,6 +119,15 @@ $(document).ready(function() {
             $.magnificPopup.close();
         })
     })();
+    (function addModalOneBuyClick() {
+        $('.button-buy-one-click').magnificPopup({
+            type: 'inline',
+            items: {
+                src: '.one-click-buy',
+            },
+            showCloseBtn: false,
+        });
+    })();
     (function addEnterModal() {
         $('.enter').magnificPopup({
             type: 'inline',
@@ -141,6 +149,11 @@ $(document).ready(function() {
     })();
     (function addValidationCallbackForm() {
         $('#callback-form').validate({
+            required: true,
+        });
+    })();
+    (function addValidationOneClickBuyForm() {
+        $('#buy-one-click-form').validate({
             required: true,
         });
     })();
@@ -357,6 +370,32 @@ $(document).ready(function() {
         });
 
     })();
+    (function closeOrderRow() {
+        var thisElement;
+        var thisParent;
+
+        $('.close-row').on('click', function () {
+           thisElement = $(this);
+           thisParent = thisElement.parents('tr');
+        });
+        $('.button-yes-close').on('click', function () {
+            thisElement.magnificPopup('close');
+            thisParent.hide();
+        });
+        $('.button-no-close').on('click', function () {
+            thisElement.magnificPopup('close');
+        });
+    })();
+    (function initClosePopupRow() {
+        $('.close-row').magnificPopup({
+            type: 'inline',
+            items: {
+                src: '.close-row-modal',
+            },
+            showCloseBtn: false,
+        });
+    })();
+
     // (function initMusk() {
     //     $('.quantity input').mask("a", {
     //         translation: {
@@ -366,7 +405,6 @@ $(document).ready(function() {
     //         }
     //     });
     // })();
-
 
 
 

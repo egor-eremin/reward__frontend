@@ -1050,6 +1050,7 @@ svg {
     opacity: 0;
     visibility: hidden;
     transition: .3s ease-in-out;
+    z-index: 100;
 }
 .menu-catalog__item_with-sub:not(.menu-catalog__item_sub)::before {
     content: "";
@@ -1696,14 +1697,15 @@ svg {
 }
 .modal-popup__header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 4.0625rem;
 }
 .modal-popup__title {
     font-size: 1.875rem;
     font-weight: 300;
-    line-height: .73;
+    line-height: 1.2;
+    margin-right: 15px;
 }
 .button_close {
     padding: 0.6875rem 2.6875rem;
@@ -1843,8 +1845,8 @@ svg {
     border-width: 4px;
     height: 58px;
     border-radius: 33px;
-    padding-left: 15px;
-    padding-right: 2.9375rem;
+    padding-left: 1.25rem;
+    padding-right: 3.25rem;
     font-size: 1rem;
     flex-shrink: 0;
 }
@@ -1925,7 +1927,7 @@ svg {
 .bread-crumbs {
     margin-top: 1.625rem;
 }
-.catalog {
+.catalog, .content-page {
     display: flex;
     align-items: flex-start;
     margin-left: -10px;
@@ -1937,22 +1939,29 @@ svg {
     padding-left: 10px;
     padding-right: 10px;
 }
-.catalog__menu {
+.catalog__menu, .content-page__menu {
     box-shadow: 0px 27px 46px 0px rgba(178, 142, 0, 0.51);
 }
-.catalog__menu-item {
+.catalog__menu-item, .content-page__menu-item {
     font-size: 0.875rem;
     line-height: 1.7;
 }
-.catalog__menu-item a {
+.catalog__menu-item a, .content-page__menu-item a {
     padding: 1rem 2.3125rem;
     width: 100%;
     background-color: #ffdd55;
     transition: .3s ease-in-out;
 }
+.content-page__menu-item a {
+    position: relative;
+    padding: 1rem 2.3125rem 1rem 56px;
+}
 .catalog__menu-item a:hover {
     background-color: #0078ab;
     color: #fff;
+}
+.content-page__menu-item a:hover {
+    background-color: #eccb49;
 }
 .filter {
     background-color: #fff;
@@ -3319,8 +3328,8 @@ svg {
     font-weight: 400;
     padding: 2.4375rem 10px;
 }
-.history tr + tr td {
-    border-top: 1px solid #d4d7e2;
+.history tr:not(:last-child) td {
+    border-bottom: 1px solid #d4d7e2;
 }
 .history td:first-child, .history td:last-child {
     position: relative;
@@ -3434,6 +3443,8 @@ svg {
 }
 .button-send_blue {
     border-color: #0078ab;
+}
+.button-send_full-width {
     width: 100%;
     margin-top: 11px;
 }
@@ -3453,4 +3464,21 @@ svg {
 }
 .button-send_blue:hover .one-click {
     fill: #fff;
+}
+.close-row-modal__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-yes-close {
+    margin-right: 10px;
+}
+.content-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    display: flex;
+    justify-content: center;
 }
