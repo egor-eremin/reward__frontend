@@ -589,6 +589,7 @@ footer {
     line-height: 1.2222;
     color: #2d2d2d;
     justify-content: center;
+    white-space: nowrap;
 }
 .button_enter {
     background-color: #e0c045;
@@ -1843,8 +1844,8 @@ svg {
     border-width: 4px;
     height: 58px;
     border-radius: 33px;
-    padding-left: 3.5625rem;
-    padding-right: 4.125rem;
+    padding-left: 15px;
+    padding-right: 2.9375rem;
     font-size: 1rem;
     flex-shrink: 0;
 }
@@ -3344,4 +3345,113 @@ svg {
     padding-left: 1.5rem;
     padding-right: 0;
     justify-content: space-between;
+}
+.quantity_table {
+    margin: 0 auto;
+}
+.close-row {
+    position: absolute;
+    padding: 0;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #303030;
+}
+.close-row span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    width: 16px;
+    height: 1px;
+    transition: .3s ease-in-out;
+}
+.close-row span:first-child {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.close-row span:last-child {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close-row:hover span:last-child {
+    transform: translate(-50%, -50%) rotate(225deg);
+}
+.close-row:hover span:first-child {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+.img-table {
+    max-width: 56px;
+}
+.last-td {
+    position: relative;
+}
+.left-text {
+    text-align: left !important;
+}
+.orders {
+    margin-top: 2.375rem;
+    display: flex;
+    align-items: flex-start;
+}
+.orders__table {
+    width: calc(75% - 10px);
+    margin-right: 10px;
+}
+.orders__total {
+    width: calc(25% - 10px);
+    margin-left: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 3rem;
+    padding: 1.625rem 1.0625rem;
+}
+.orders__total-title {
+    font-weight: 700;
+    line-height: 1.375rem;
+    margin-bottom: 10px;
+}
+.orders__total-amount {
+    position: relative;
+    font-weight: 700;
+    font-size: 1.875rem;
+    padding-left: 3.875rem;
+}
+.orders__total-amount::before {
+    content: "";
+    width: 3rem;
+    height: 2px;
+    background-color: #e6bc17;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.orders__button {
+    width: 100%;
+    margin-top: 6.25rem;
+}
+.button-send_blue {
+    border-color: #0078ab;
+    width: 100%;
+    margin-top: 11px;
+}
+.one-click-svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+.one-click {
+    transition: .3s ease-in-out;
+}
+.button-send_blue:hover {
+    background-color: #0078ab;
+    border-color: #0078ab;
+    color: #fff;
+}
+.button-send_blue:hover .one-click {
+    fill: #fff;
 }
