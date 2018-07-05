@@ -3545,6 +3545,8 @@ svg {
 }
 .important-information {
     display: flex;
+    margin-top: 3.75rem;
+    margin-bottom: 3.5rem;
 }
 .important-information__quote {
     font-family: "Times New Roman", Serif;
@@ -3555,4 +3557,21 @@ svg {
 }
 .important-information__quote-img {
     position: absolute;
+    right: 0;
+    top: -10px;
+}
+.important-information__img {
+    margin-right: 1.6875rem;
+}
+.important-information__author-name {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 0.916;
+    margin-top: 2.9375rem;
+}
+.important-information__position {
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.375;
+    margin-top: 1.1875rem;
 }
