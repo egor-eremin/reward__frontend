@@ -340,19 +340,28 @@ $(document).ready(function() {
             initializationExamlesSlider()
         }
     })();
-    (function () {
-        $('.filter-block').isotope({
-            layoutMode: 'vertical',
-            itemSelector: '.element-item',
-        });
+    (function initIsotop() {
+        if ($('div').is('.vacancies__filter-block')) {
+            $('.vacancies__filter-block').isotope({
+                layoutMode: 'vertical',
+                itemSelector: '.vacancies__element-item',
+            });
 
-        $('.vacancies__tab-titles').on( 'click', '.vacancies__tab-switch', function() {
-            var filterValue = $( this ).attr('data-filter');
-            // use filterFn if matches value
-            // filterValue = filterFns[ filterValue ] || filterValue;
-            $('.filter-block').isotope({ filter: filterValue });
+            $('.vacancies__tab-titles').on( 'click', '.vacancies__tab-switch', function() {
+                var filterValue = $( this ).attr('data-filter');
+                $('.vacancies__filter-block').isotope({ filter: filterValue });
+            });
+        }
+    })();
+    (function switchVacanciesFilters() {
+        $('.vacancies__tab-switch').on('click', function () {
+           if (!$(this).hasClass('active')) {
+               $('.vacancies__tab-switch').removeClass('active');
+               $(this).addClass('active');
+           }
         });
     })();
+    
 
     // (function initMusk() {
     //     $('.quantity input').mask("a", {
