@@ -4036,3 +4036,44 @@ svg {
     margin-bottom: 26px;
     width: 100%;
 }
+
+#map {
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+
+.contact-wrapper {
+    background-color: #FFF;
+}
+
+.map__button {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.map__button>.button {
+    margin: 0 5px;
+    border-color: #FFF;
+    padding-right: 1.5625rem;
+    padding-left: 1.5625rem;
+}
+
+.map__button>.button:hover:not(.active) {
+    border-color: #ffdd55;
+    background-color: transparent;
+}
+
+.active {
+    background-color: #ffdd55;
+}
+
+.active:before {
+    content: "";
+    display: table;
+    background-image: url("../images/placemarker.png");
+    width: 11px;
+    height: 16px;
+    margin-right: 15px;
+}
