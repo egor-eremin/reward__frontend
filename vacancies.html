@@ -4728,7 +4728,7 @@
                             <h1 class="h1-title content-page__h1 underlining underlining_for-h1 underlining_blue">
                                 Вакансии
                             </h1>
-                            <div class="vacancies__tab-wrapper">
+                            <div class="vacancies__tab-wrapper" id="vacancies-tab">
                                 <ul class="vacancies__tab-titles">
                                     <li class="vacancies__tab-title-item">
                                         <a href="#section1-vacancies" class="vacancies__tab-switch active"><span class="check-dots"></span>Все вакансии</a>
@@ -4813,7 +4813,7 @@
                                                 Удаленные сотрудники являются полноценной частью нашей команды, и мы относимся к ним точно так же,
                                                 как и к сотрудникам в наших офисах.
                                             </p>
-                                            <form action="#" class="vacancies-form">
+                                            <form action="#"  class="vacancies-form">
                                                 <div class="form-item cooperation-form__item">
                                                     <label class="form-label" for="vacancies-name1">
                                                         Имя Фамилия
@@ -4830,8 +4830,8 @@
                                                 <div class="form-item cooperation-form__footer form-item-footer form-item_flex">
                                                     <div class="personal-date">
                                                         <div class="custom-upload">
-                                                            <input type="file" class="upload-input custom-upload__input">
-                                                            <label for="upload-input" class="input-file-trigger custom-upload__label">
+                                                            <label class="input-file-trigger custom-upload__label">
+                                                                <input type="file" required class="upload-input custom-upload__input">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                                                                     <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                                                                         <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
@@ -4975,7 +4975,7 @@
                                                     <div class="personal-date">
                                                         <div class="custom-upload">
                                                             <label class="input-file-trigger custom-upload__label">
-                                                                <input type="file" class="upload-input custom-upload__input">
+                                                                <input type="file" required class="upload-input custom-upload__input">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                                                                     <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                                                                         <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
@@ -5118,7 +5118,7 @@
                                                     <div class="personal-date">
                                                         <div class="custom-upload">
                                                             <label class="input-file-trigger custom-upload__label">
-                                                                <input type="file" class="upload-input custom-upload__input">
+                                                                <input type="file" required class="upload-input custom-upload__input">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                                                                     <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                                                                         <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
@@ -5176,6 +5176,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+
                                 <div id="section2-vacancies" class="vacancies__filter-block">
                                     <div class="vacancies__element-item">
                                         <div class="vacancies__element-item-header">
@@ -5248,23 +5250,23 @@
                                             </p>
                                             <form action="#" class="vacancies-form">
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-name1">
+                                                    <label class="form-label" for="vacancies-name4">
                                                         Имя Фамилия
                                                     </label>
-                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name1">
+                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name4">
                                                 </div>
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-phone1">
+                                                    <label class="form-label" for="vacancies-phone4">
                                                         Телефон
                                                     </label>
                                                     <input class="form-input phone-input" minlength="18" type="text" required name="user-phone"
-                                                           id="vacancies-phone1">
+                                                           id="vacancies-phone4">
                                                 </div>
                                                 <div class="form-item cooperation-form__footer form-item-footer form-item_flex">
                                                     <div class="personal-date">
                                                         <div class="custom-upload">
                                                             <label class="input-file-trigger custom-upload__label">
-                                                                <input type="file" class="upload-input custom-upload__input">
+                                                                <input required type="file" class="upload-input custom-upload__input">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                                                                     <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                                                                         <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
@@ -5392,23 +5394,23 @@
                                             </p>
                                             <form action="#" class="vacancies-form">
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-name2">
+                                                    <label class="form-label" for="vacancies-name5">
                                                         Имя Фамилия
                                                     </label>
-                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name2">
+                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name5">
                                                 </div>
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-phone2">
+                                                    <label class="form-label" for="vacancies-phone5">
                                                         Телефон
                                                     </label>
                                                     <input class="form-input phone-input" minlength="18" type="text" required name="user-phone"
-                                                           id="vacancies-phone2">
+                                                           id="vacancies-phone5">
                                                 </div>
                                                 <div class="form-item cooperation-form__footer form-item-footer form-item_flex">
                                                     <div class="personal-date">
                                                         <div class="custom-upload">
                                                             <label class="input-file-trigger custom-upload__label">
-                                                                <input type="file" class="upload-input custom-upload__input">
+                                                                <input required type="file" class="upload-input custom-upload__input">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                                                                     <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                                                                         <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
@@ -5466,6 +5468,8 @@
                                         </div>
                                     </div>
                                 </div>
+
+
                                 <div id="section3-vacancies" class="vacancies__filter-block">
                                     <div class="vacancies__element-item">
                                         <div class="vacancies__element-item-header">
@@ -5538,23 +5542,23 @@
                                             </p>
                                             <form action="#" class="vacancies-form">
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-name1">
+                                                    <label class="form-label" for="vacancies-name6">
                                                         Имя Фамилия
                                                     </label>
-                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name1">
+                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name6">
                                                 </div>
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-phone1">
+                                                    <label class="form-label" for="vacancies-phone6">
                                                         Телефон
                                                     </label>
                                                     <input class="form-input phone-input" minlength="18" type="text" required name="user-phone"
-                                                           id="vacancies-phone1">
+                                                           id="vacancies-phone6">
                                                 </div>
                                                 <div class="form-item cooperation-form__footer form-item-footer form-item_flex">
                                                     <div class="personal-date">
                                                         <div class="custom-upload">
                                                             <label class="input-file-trigger custom-upload__label">
-                                                                <input type="file" class="upload-input custom-upload__input">
+                                                                <input required type="file" class="upload-input custom-upload__input">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                                                                     <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                                                                         <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
@@ -5684,23 +5688,23 @@
                                             </p>
                                             <form action="#" class="vacancies-form">
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-name1">
+                                                    <label class="form-label" for="vacancies-name7">
                                                         Имя Фамилия
                                                     </label>
-                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name1">
+                                                    <input class="form-input" type="text" required name="user-name" id="vacancies-name7">
                                                 </div>
                                                 <div class="form-item cooperation-form__item">
-                                                    <label class="form-label" for="vacancies-phone1">
+                                                    <label class="form-label" for="vacancies-phone7">
                                                         Телефон
                                                     </label>
                                                     <input class="form-input phone-input" minlength="18" type="text" required name="user-phone"
-                                                           id="vacancies-phone1">
+                                                           id="vacancies-phone7">
                                                 </div>
                                                 <div class="form-item cooperation-form__footer form-item-footer form-item_flex">
                                                     <div class="personal-date">
                                                         <div class="custom-upload">
-                                                            <input type="file" class="upload-input custom-upload__input">
-                                                            <label for="upload-input" class="input-file-trigger custom-upload__label">
+                                                            <label class="input-file-trigger custom-upload__label">
+                                                                <input type="file" required class="upload-input custom-upload__input">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                                                                     <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
                                                                         <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">

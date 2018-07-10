@@ -3960,7 +3960,7 @@ svg {
     transition: .3s ease-in-out;
     opacity: 0;
 }
-.vacancies__tab-switch.active .check-dots::after {
+.vacancies__tab-switch[aria-selected="true"] .check-dots::after {
     opacity: 1;
 }
 .vacancies__tab-title-item {
@@ -4035,4 +4035,22 @@ svg {
 .vacancies__element-item {
     margin-bottom: 26px;
     width: 100%;
+}
+.button-show-vacancies .button-checkout-icon svg {
+    transition: .3s ease-in-out;
+}
+.button-show-vacancies.active .button-checkout-icon svg {
+    transform: rotate(90deg);
+}
+.button-show-vacancies:hover .button-checkout-icon {
+    background-color: #fff;
+}
+.custom-upload__label label.error {
+    display: none !important;
+}
+.custom-upload__input ~ svg path {
+    transition: .3s ease-in-out;
+}
+.custom-upload__input.error ~ svg path {
+    fill: red;
 }
