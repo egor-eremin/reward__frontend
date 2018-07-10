@@ -340,24 +340,59 @@ $(document).ready(function() {
             initializationExamlesSlider()
         }
     })();
-    (function initIsotop() {
-        if ($('div').is('.vacancies__filter-block')) {
-            $('.vacancies__filter-block').isotope({
-                layoutMode: 'vertical',
-                itemSelector: '.vacancies__element-item',
+    // (function initIsotop() {
+    //     if ($('div').is('.vacancies__filter-block')) {
+    //         $('.vacancies__filter-block').isotope({
+    //             layoutMode: 'vertical',
+    //             itemSelector: '.vacancies__element-item',
+    //         });
+    //
+    //         $('.vacancies__tab-titles').on( 'click', '.vacancies__tab-switch', function() {
+    //             var filterValue = $( this ).attr('data-filter');
+    //             $('.vacancies__filter-block').isotope({ filter: filterValue });
+    //         });
+    //     }
+    // })();
+    // (function switchVacanciesFilters() {
+    //     $('.vacancies__tab-switch').on('click', function () {
+    //        if (!$(this).hasClass('active')) {
+    //            $('.vacancies__tab-switch').removeClass('active');
+    //            $(this).addClass('active');
+    //        }
+    //     });
+    // })();
+    (function customizeCustomUpload() {
+        var fileInput  = document.querySelector( ".upload-input" ),
+            button = document.querySelector( ".input-file-trigger" ),
+            the_return = document.querySelector("#file-return");
+
+        if ($('div').is('.custom-upload')) {
+            button.addEventListener("keydown", function (event) {
+                if (event.keyCode == 13 || event.keyCode == 32) {
+                    fileInput.focus();
+                }
+            });
+            button.addEventListener("click", function (event) {
+                fileInput.focus();
+                return false;
+            });
+            fileInput.addEventListener("change", function (event) {
+                the_return.innerHTML = this.value;
             });
 
-            $('.vacancies__tab-titles').on( 'click', '.vacancies__tab-switch', function() {
-                var filterValue = $( this ).attr('data-filter');
-                $('.vacancies__filter-block').isotope({ filter: filterValue });
-            });
         }
     })();
-    (function switchVacanciesFilters() {
-        $('.vacancies__tab-switch').on('click', function () {
-           if (!$(this).hasClass('active')) {
-               $('.vacancies__tab-switch').removeClass('active');
-               $(this).addClass('active');
+    (function initAccordeonVacancies() {
+        $('.button-show-vacancies').on('click', function () {
+           var thisParent = $(this).parents('.vacancies__element-item');
+           var thisVacanciesText = thisParent.find('.vacancies__element-item-body');
+
+           if (thisParent.hasClass('active')) {
+               thisVacanciesText.slideUp(300);
+               thisParent.removeClass('active');
+           } else {
+               thisVacanciesText.slideDown(300);
+               thisParent.addClass('active');
            }
         });
     })();

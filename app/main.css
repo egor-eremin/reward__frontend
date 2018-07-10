@@ -3997,4 +3997,42 @@ svg {
 }
 .vacancies__element-item-body {
     padding-top: 2.625rem;
+    display: none;
+}
+.vacancies-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom-upload__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.custom-upload__label, .custom-upload__path {
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.5714;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.custom-upload__label:hover {
+    text-decoration: underline;
+}
+.custom-upload__label svg {
+    margin-right: 12px;
+}
+.custom-upload {
+    margin-bottom: 5px;
+}
+.custom-upload__path {
+    padding-left: 25px;
+}
+.vacancies__element-item {
+    margin-bottom: 26px;
+    width: 100%;
 }
