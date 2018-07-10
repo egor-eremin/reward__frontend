@@ -4506,10 +4506,10 @@
             <div class="contact-wrapper">
                 <div id="map"></div>
                 <div class="map__button">
-                    <button class="button button_hover active">
+                    <button class="button button_hover active" data-map="52.280854,104.291638" data-marker="52.280854,104.294638">
                         г. Иркутск
                     </button>
-                    <button class="button button_hover">
+                    <button class="button button_hover" data-map="51.835471,107.580029" data-marker="51.835471,107.583029">
                         г. Улан-Удэ
                     </button>
                 </div>  
@@ -4519,7 +4519,82 @@
                             <h1 class="h1-title content-page__h1 underlining underlining_for-h1 underlining_blue">
                                 Связаться с нами
                             </h1>
+                            <div class="contact__wrapper">
+                                <form action="#" class="contact-form" id="validate-contact-form" novalidate="novalidate">
+                                    <div class="form-item contact-form__item">
+                                        <label class="form-label" for="contact-name">
+                                            Имя Фамилия
+                                        </label>
+                                        <input class="form-input" type="text" required="" name="user-name" id="contact-name">
+                                    </div>
+                                    <div class="form-item contact-form__item">
+                                        <label class="form-label" for="contact-phone">
+                                            Телефон
+                                        </label>
+                                        <input class="form-input phone-input" minlength="18" type="text" required="" name="user-phone" id="contact-phone" maxlength="18">
+                                    </div>
+                                    <div class="form-item contact-form__item">
+                                        <label class="form-label" for="contact-message">
+                                            Текст сообщения
+                                        </label>
+                                        <textarea class="form-input message-input" required="" name="message" id="contact-message"></textarea>
+                                    </div>
+                                    <div class="form-item contact-form__footer form-item-footer form-item_flex">
+                                        <button type="submit" class="button button-send button_hover">
+                                        Отправить
+                                        <span class="send-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="9.34" height="15" viewBox="0 0 9.34 15">
+                                            <metadata><!--?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?-->
+                                                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                            <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                <rdf:description rdf:about=""></rdf:description>
+                                            </rdf:rdf>
+                                            </x:xmpmeta>
+                                                <!--?xpacket end="w"?--></metadata>
+                                            <path fill="#2d2d2d" fill-rule="evenodd" d="M1224.39,944.42l5.08-4.921-5.08-4.92a1.5,1.5,0,0,1,1.08-2.58h0a1.529,1.529,0,0,1,1.08.436l6.25,6.056a1.4,1.4,0,0,1,0,2.018l-6.25,6.054a1.529,1.529,0,0,1-1.08.436h0A1.5,1.5,0,0,1,1224.39,944.42Z" transform="translate(-1223.91 -932)"></path>
+                                            </svg>
+                                        </span>
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="address-contact">
+                                    <div class="address-contact__item">
+                                        <strong>Иркутск:</strong>
+                                        <p class="address-description">
+                                            г. Иркутск, ул.Литвинова 20, стр.1 (вход 
+                                            c ул. Литвинова, ближе к трамвайным
+                                            путям, напротив "Торгового комплекса") рядом магазин "Джинс маркет"
+                                        </p>
+                                        <p class="address-mail">
+                                            Email: <a href="mailto:info@nagrada38.ru">info@nagrada38.ru</a> 
+                                        </p>
+                                        <p class="address-phone">Телефон: <a href="tel:73952717001">+7 (3952) 717-001</a></p>
+                                        <p class="address-hours">
+                                            Пн - Пт: 10<sup>00</sup>-19<sup>00</sup><br>
+                                            Сб - Вс: 10<sup>00</sup>-19<sup>00</sup>
+                                        </p>
+                                    </div>
+                                    <div class="address-contact__item">
+                                        <strong>Удан-удэ:</strong>
+                                        <p class="address-description">
+                                            (БЦ Юниплаза, вход c ул.Сухэ-Батора, ориентир Uni Fit фитнес клуб)
+                                        </p>
+                                        <p class="address-mail">
+                                            Email: <a href="mailto:608298@nagrada38.ru">608298@nagrada38.ru</a> 
+                                        </p>
+                                        <p class="address-phone">
+                                            Телефон: <a href="tel:73012608298">+7 (3012) 608-298</a><br>
+                                            Мобильный: <a href="tel:79021608298">+7 (902) 160-82-98</a>
+                                        </p>
+                                        <p class="address-hours">
+                                            Пн - Пт: 10<sup>00</sup>-19<sup>00</sup><br>
+                                            Сб - Вс: 10<sup>00</sup>-19<sup>00</sup>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -5520,27 +5595,5 @@
 <script src="app/js/ofi.js"></script>
 <script src="app/js/main.js"></script>
 <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
-
-<script type="text/javascript">
-    ymaps.ready(init);
-        var myMap,
-            myPlacemark;
-
-        function init(){     
-            myMap = new ymaps.Map ("map", {
-                center: [52.280854, 104.291638],
-                zoom: 16
-            });
-
-            myPlacemark = new ymaps.Placemark([52.280854, 104.294638], { 
-                hintContent: 'Награда центр', 
-                balloonContent: 'Получи награду, которую ты заслужил.'
-            });
-
-            myMap.geoObjects.add(myPlacemark);
-        }
-</script>
-  
-
 </body>
 </html>

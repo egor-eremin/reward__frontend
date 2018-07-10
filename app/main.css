@@ -3750,7 +3750,8 @@ svg {
     margin-top: 3.875rem;
 }
 
-.articles {
+.articles,
+.contact {
     padding-left: 10px;
 }
 
@@ -3769,7 +3770,10 @@ svg {
 .articles__item_first,
 .articles__item_last,
 .articles__item_first .articles__content-wrapper,
-.articles__item_last .articles__content-wrapper {
+.articles__item_last .articles__content-wrapper,
+.form-contact,
+.address-contact__item,
+.address-contact {
     width: 50%;
 }
 
@@ -4041,6 +4045,11 @@ svg {
     width: 100%;
     height: 500px;
     background-color: grey;
+    margin-top: 20px;
+}
+
+.contact {
+    width: 100%;
 }
 
 .contact-wrapper {
@@ -4065,15 +4074,88 @@ svg {
     background-color: transparent;
 }
 
-.active {
+.map__button .active {
     background-color: #ffdd55;
 }
 
-.active:before {
+.map__button .active:before {
     content: "";
     display: table;
     background-image: url("../images/placemarker.png");
     width: 11px;
     height: 16px;
     margin-right: 15px;
+}
+
+.contact__wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.address-contact__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.address-contact {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+.contact-form textarea {
+    height: 130px;
+}
+
+.contact .content-page__h1 {
+    margin-bottom: 1.563rem;
+}
+
+.address-contact__item strong {
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1.375rem;
+    padding-left: 35%;
+    position: relative;
+}
+
+.address-contact__item strong:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 2px;
+    background-color: #b3b3b3;
+    position: absolute;
+    left: 0.4375rem;
+    top: 0.6875rem;
+}
+
+.address-contact__item p {
+    line-height: 2.2145;
+}
+
+.address-contact__item p>a {
+    color: #0055cc;
+    text-decoration: underline #0055cc;
+
+}
+
+.contact-form .form-item_flex {
+    justify-content: flex-end;
+}
+
+.contact-form .form-item-footer {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
 }
