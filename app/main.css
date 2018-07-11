@@ -2599,7 +2599,7 @@ svg {
     margin-bottom: 1rem;
     font-size: 1.875rem;
     font-weight: 300;
-    line-height: .73;
+    line-height: 1.2;
     padding-bottom: 1.3125rem;
 }
 .code-product {
@@ -3243,6 +3243,7 @@ svg {
     line-height: 1.57;
     border-bottom: 1px dashed #0055cc;
     margin-bottom: 1.8125rem;
+    background-color: transparent;
 }
 .ask-question:hover {
     border-bottom: none;
@@ -3554,6 +3555,7 @@ svg {
     position: relative;
     font-size: 1.5rem;
     line-height: 0.9166;
+    padding-right: 6.875rem;
 }
 .important-information__quote-img {
     position: absolute;
@@ -4103,4 +4105,66 @@ svg {
 }
 .pagination_reviews {
     margin-top: -3rem;
+}
+.text-footnote_article {
+    width: 100%;
+    padding: 0 13px;
+}
+.text-footnote_center-mod {
+    text-align: center;
+    padding-left: 0;
+}
+.article__img-prev {
+    margin-top: 3.5625rem;
+    margin-bottom: 3.8125rem;
+}
+.article__img-prev img {
+    width: 100%;
+}
+.prev-text {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.375;
+    color: #8d8d8d;
+    margin-top: -1.3125rem;
+}
+.prev-text__date {
+    font-style: normal;
+}
+.prev-text__text {
+    margin-right: 2.125rem;
+}
+.services__menu-item {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 121px;
+    background-color: #f0f0f0;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+    padding: 1.5625rem 1.3125rem;
+    margin-bottom: 17px;
+}
+.services__menu-item:hover, .services__menu-item.active {
+    background-color: #ffdd55;
+    box-shadow: 0px 27px 46px 0px rgba(178, 142, 0, 0.51);
+}
+.services__menu-item-svg path {
+    transition: .3s ease-in-out;
+}
+.services__menu-item:hover .services__menu-item-svg path, .services__menu-item.active .services__menu-item-svg path {
+    fill: #ffdd55;
+}
+.services__menu-item-svg {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }

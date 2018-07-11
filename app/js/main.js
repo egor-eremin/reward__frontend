@@ -415,6 +415,9 @@ $(document).ready(function() {
                     });
         });
     })();
+    (function initAskQuestion() {
+        
+    })();
     // (function validateVacanciesForm() {
     //     $('.vacancies-form').validate({
     //         required: true,
