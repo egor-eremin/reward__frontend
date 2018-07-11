@@ -180,6 +180,11 @@ $(document).ready(function() {
             required: true,
         });
     })();
+    (function () {
+        $('#validate-contact-form').validate({
+            required: true,
+        });
+    })();
 
     (function initRangeSlider() {
         if ($("div").is('#custom-range')) {
@@ -660,6 +665,17 @@ $(document).ready(function() {
             myPlacemark = new ymaps.Placemark(elem.dataset.marker.split(','), { 
                 hintContent: 'Награда центр', 
                 balloonContent: 'Получи награду, которую ты заслужил.'
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: './images/geoMarker.svg',
+                // Размеры метки.
+                iconImageSize: [69, 79],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-35, -50]
             });
             myMap.geoObjects.add(myPlacemark);
         };

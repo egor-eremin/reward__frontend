@@ -4483,7 +4483,7 @@
                 </div>
             </div>
         </header>
-        <main>
+        <main class="background_white">
             <div class="template-wrapper">
                 <div class="bread-crumbs">
                     <ul class="bread-crumbs__list">
@@ -4502,807 +4502,767 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="contact-wrapper">
-                <div id="map"></div>
-                <div class="map__button">
-                    <button class="button button_hover active" data-map="52.280854,104.291638" data-marker="52.280854,104.294638">
-                        г. Иркутск
-                    </button>
-                    <button class="button button_hover" data-map="51.835471,107.580029" data-marker="51.835471,107.583029">
-                        г. Улан-Удэ
-                    </button>
-                </div>  
-                <div class="template-wrapper">
-                    <div class="content-page">
-                        <div class="content-page__wrapper contact">
-                            <h1 class="h1-title content-page__h1 underlining underlining_for-h1 underlining_blue">
-                                Связаться с нами
-                            </h1>
-                            <div class="contact__wrapper">
-                                <form action="#" class="contact-form" id="validate-contact-form" novalidate="novalidate">
-                                    <div class="form-item contact-form__item">
-                                        <label class="form-label" for="contact-name">
-                                            Имя Фамилия
-                                        </label>
-                                        <input class="form-input" type="text" required="" name="user-name" id="contact-name">
-                                    </div>
-                                    <div class="form-item contact-form__item">
-                                        <label class="form-label" for="contact-phone">
-                                            Телефон
-                                        </label>
-                                        <input class="form-input phone-input" minlength="18" type="text" required="" name="user-phone" id="contact-phone" maxlength="18">
-                                    </div>
-                                    <div class="form-item contact-form__item">
-                                        <label class="form-label" for="contact-message">
-                                            Текст сообщения
-                                        </label>
-                                        <textarea class="form-input message-input" required="" name="message" id="contact-message"></textarea>
-                                    </div>
-                                    <div class="form-item contact-form__footer form-item-footer form-item_flex">
-                                        <button type="submit" class="button button-send button_hover">
-                                        Отправить
-                                        <span class="send-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="9.34" height="15" viewBox="0 0 9.34 15">
-                                            <metadata><!--?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?-->
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                            <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                <rdf:description rdf:about=""></rdf:description>
-                                            </rdf:rdf>
-                                            </x:xmpmeta>
-                                                <!--?xpacket end="w"?--></metadata>
-                                            <path fill="#2d2d2d" fill-rule="evenodd" d="M1224.39,944.42l5.08-4.921-5.08-4.92a1.5,1.5,0,0,1,1.08-2.58h0a1.529,1.529,0,0,1,1.08.436l6.25,6.056a1.4,1.4,0,0,1,0,2.018l-6.25,6.054a1.529,1.529,0,0,1-1.08.436h0A1.5,1.5,0,0,1,1224.39,944.42Z" transform="translate(-1223.91 -932)"></path>
-                                            </svg>
-                                        </span>
-                                        </button>
-                                    </div>
-                                </form>
-                                <div class="address-contact">
-                                    <div class="address-contact__item">
-                                        <strong>Иркутск:</strong>
-                                        <p class="address-description">
-                                            г. Иркутск, ул.Литвинова 20, стр.1 (вход 
-                                            c ул. Литвинова, ближе к трамвайным
-                                            путям, напротив "Торгового комплекса") рядом магазин "Джинс маркет"
-                                        </p>
-                                        <p class="address-mail">
-                                            Email: <a href="mailto:info@nagrada38.ru">info@nagrada38.ru</a> 
-                                        </p>
-                                        <p class="address-phone">Телефон: <a href="tel:73952717001">+7 (3952) 717-001</a></p>
-                                        <p class="address-hours">
-                                            Пн - Пт: 10<sup>00</sup>-19<sup>00</sup><br>
-                                            Сб - Вс: 10<sup>00</sup>-19<sup>00</sup>
-                                        </p>
-                                    </div>
-                                    <div class="address-contact__item">
-                                        <strong>Удан-удэ:</strong>
-                                        <p class="address-description">
-                                            (БЦ Юниплаза, вход c ул.Сухэ-Батора, ориентир Uni Fit фитнес клуб)
-                                        </p>
-                                        <p class="address-mail">
-                                            Email: <a href="mailto:608298@nagrada38.ru">608298@nagrada38.ru</a> 
-                                        </p>
-                                        <p class="address-phone">
-                                            Телефон: <a href="tel:73012608298">+7 (3012) 608-298</a><br>
-                                            Мобильный: <a href="tel:79021608298">+7 (902) 160-82-98</a>
-                                        </p>
-                                        <p class="address-hours">
-                                            Пн - Пт: 10<sup>00</sup>-19<sup>00</sup><br>
-                                            Сб - Вс: 10<sup>00</sup>-19<sup>00</sup>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+            </div>            
+            <div id="map"></div>
+            <div class="map__button">
+                <button class="button button_hover active" data-map="52.280854,104.291638" data-marker="52.280854,104.294638">
+                    г. Иркутск
+                </button>
+                <button class="button button_hover" data-map="51.835471,107.580029" data-marker="51.835471,107.583029">
+                    г. Улан-Удэ
+                </button>
+            </div>  
             <div class="template-wrapper">
-                <div class="individual-order">
-                    <div class="individual-order__animate-img animate">
-                        <img src="images/individual-order-img.png" alt="Индивидуальный заказ">
-                    </div>
-                    <div class="individual-order__text-block">
-                        <div class="individual-order__title">
-                            Изготовление кубков
-                            по индивидуальному заказу
-                        </div>
-                        <div class="individual-order__text">
-                            В нашем магазине так же работает Дизайнер, который поможет вашему поздравлению или номинации
-                            принять самый праздничный и нарядный вид.
-                        </div>
-                        <a href="#" class="button button_big button-individual-order button__hover">
-                            Подробнее
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8.5" height="15" viewBox="0 0 8.5 15">
-                                <metadata><!--?xpacket begin="&#65279;" id="W5M0MpCehiHzreSzNTczkc9d"?-->
-                                    <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                <div class="content-page">
+                    <div class="content-page__wrapper contact">
+                        <h1 class="h1-title content-page__h1 underlining underlining_for-h1 underlining_blue">
+                            Связаться с нами
+                        </h1>
+                        <div class="contact__wrapper">
+                            <form action="#" class="contact-form" id="validate-contact-form" novalidate="novalidate">
+                                <div class="form-item contact-form__item">
+                                    <label class="form-label" for="contact-name">
+                                        Имя Фамилия
+                                    </label>
+                                    <input class="form-input" type="text" required="" name="user-name" id="contact-name">
+                                </div>
+                                <div class="form-item contact-form__item">
+                                    <label class="form-label" for="contact-phone">
+                                        Телефон
+                                    </label>
+                                    <input class="form-input phone-input" minlength="18" type="text" required="" name="user-phone" id="contact-phone" maxlength="18">
+                                </div>
+                                <div class="form-item contact-form__item">
+                                    <label class="form-label" for="contact-message">
+                                        Текст сообщения
+                                    </label>
+                                    <textarea class="form-input message-input" required="" name="message" id="contact-message" height="130px"></textarea>
+                                </div>
+                                <div class="form-item contact-form__footer form-item-footer form-item_flex">
+                                    <button type="submit" class="button button-send button_hover">
+                                    Отправить
+                                    <span class="send-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9.34" height="15" viewBox="0 0 9.34 15">
+                                        <metadata><!--?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?-->
+                                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
                                         <rdf:rdf xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
                                             <rdf:description rdf:about=""></rdf:description>
                                         </rdf:rdf>
-                                    </x:xmpmeta>
-                                    <!--?xpacket end="w"?--></metadata>
-                                <defs>
-                                    <style>
-                                        .individual-order-arrow {
-                                            fill: #706233;
-                                            fill-rule: evenodd;
-                                        }
-                                    </style>
-                                </defs>
-                                <path class="individual-order-arrow" d="M790.516,335.936l5.4-5.436-5.4-5.436A1.209,1.209,0,0,1,791.35,323h0a1.172,1.172,0,0,1,.833.349L798.2,329.4a1.565,1.565,0,0,1,0,2.2l-6.013,6.052a1.176,1.176,0,0,1-.833.349h0A1.209,1.209,0,0,1,790.516,335.936Z" transform="translate(-790.156 -323)"></path>
-                            </svg>
-
-                        </a>
-                    </div>
-                    <div class="individual-order__background-text">
-                        На заказ
+                                        </x:xmpmeta>
+                                            <!--?xpacket end="w"?--></metadata>
+                                        <path fill="#2d2d2d" fill-rule="evenodd" d="M1224.39,944.42l5.08-4.921-5.08-4.92a1.5,1.5,0,0,1,1.08-2.58h0a1.529,1.529,0,0,1,1.08.436l6.25,6.056a1.4,1.4,0,0,1,0,2.018l-6.25,6.054a1.529,1.529,0,0,1-1.08.436h0A1.5,1.5,0,0,1,1224.39,944.42Z" transform="translate(-1223.91 -932)"></path>
+                                        </svg>
+                                    </span>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="address-contact">
+                                <div class="address-contact__item">
+                                    <h4>Иркутск:</h4>
+                                    <p class="address-description">
+                                        г. Иркутск, ул.Литвинова 20, стр.1 (вход 
+                                        c ул. Литвинова, ближе к трамвайным
+                                        путям, напротив "Торгового комплекса") рядом магазин "Джинс маркет"
+                                    </p>
+                                    <p class="address-mail">
+                                        Email: <a href="mailto:info@nagrada38.ru">info@nagrada38.ru</a> 
+                                    </p>
+                                    <p class="address-phone">Телефон: <a href="tel:73952717001">+7 (3952) 717-001</a></p>
+                                    <p class="address-hours">
+                                        Пн - Пт: 10<sup>00</sup>-19<sup>00</sup><br>
+                                        Сб - Вс: 10<sup>00</sup>-19<sup>00</sup>
+                                    </p>
+                                </div>
+                                <div class="address-contact__item">
+                                    <h4>Удан-удэ:</h4>
+                                    <p class="address-description">
+                                        (БЦ Юниплаза, вход c ул.Сухэ-Батора, ориентир Uni Fit фитнес клуб)
+                                    </p>
+                                    <p class="address-mail">
+                                        Email: <a href="mailto:608298@nagrada38.ru">608298@nagrada38.ru</a> 
+                                    </p>
+                                    <p class="address-phone">
+                                        Телефон: <a href="tel:73012608298">+7 (3012) 608-298</a><br>
+                                        Мобильный: <a href="tel:79021608298">+7 (902) 160-82-98</a>
+                                    </p>
+                                    <p class="address-hours">
+                                        Пн - Пт: 10<sup>00</sup>-19<sup>00</sup><br>
+                                        Сб - Вс: 10<sup>00</sup>-19<sup>00</sup>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <section class="section we-recommend">
-                    <h2 class="h2-title h2-title_for-card underlining underlining_blue">
-                        Мы рекомендуем
-                    </h2>
-                    <div class="card-list">
-                        <div class="card-list__item card-list__item_four">
-                            <div class="card-list__item-wrapper">
-                                <div class="card-list__img">
-                                    <img src="images/catalog-img1.png" alt="Медаль на колодке">
-                                </div>
-                                <div class="card-list__article">
-                                    3000-002
-                                </div>
-                                <div class="card-list__title">
-                                    Медаль на колодке
-                                </div>
-                                <div class="card-list__status status-few">
-                                    Мало
-                                </div>
-                                <div class="card-list__price-block">
-                                    <div class="card-list__price">
-                                        3 500 руб.
-                                    </div>
-                                    <div class="card-list__sale">
-                                        -15%
-                                    </div>
-                                </div>
-                                <div class="card-list__order">
-                                    <button class="button button-order button_hover">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
-                                             viewBox="0 0 17 14">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .in-basket {
-                                                        fill: #303030;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="in-basket"
-                                                  d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
-                                                  transform="translate(-746 -1939)"/>
-                                        </svg>
-                                        В корзину
-                                    </button>
-                                </div>
-                                <button type="button" class="wish-list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
-                                         viewBox="0 0 27 23.97">
-                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                            <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                       x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                    <rdf:Description rdf:about=""/>
-                                                </rdf:RDF>
-                                            </x:xmpmeta>
-                                            <?xpacket end="w"?></metadata>
-                                        <defs>
-                                            <style>
-                                                .heart-icon {
-                                                    fill: #d2d2d2;
-                                                    fill-rule: evenodd;
-                                                }
-                                            </style>
-                                        </defs>
-                                        <path class="heart-icon"
-                                              d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
-                                              transform="translate(-681 -1014)"/>
-                                    </svg>
-                                </button>
-                                <button type="button" class="comparison">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
-                                                    C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
-                                                    C300.522,424.121,290.556,434.087,278.261,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
-                                                    C166.957,424.121,156.99,434.087,144.696,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
-                                                    C434.087,424.121,424.121,434.087,411.826,434.087z"/>
-                                        </svg>
-                                </button>
-                                <div class="rating">
-                                    <div class="rating__star">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                             viewBox="0 0 17 16">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .patrick {
-                                                        fill: #e6bc17;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="patrick"
-                                                  d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
-                                                  transform="translate(-879 -1011)"/>
-                                        </svg>
-
-                                    </div>
-                                    <div class="rating__number">
-                                        4,5
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-list__item card-list__item_four">
-                            <div class="card-list__item-wrapper">
-                                <div class="card-list__img">
-                                    <img src="images/catalog-img2.png" alt="Медаль на колодке">
-                                </div>
-                                <div class="card-list__article">
-                                    3000-002
-                                </div>
-                                <div class="card-list__title">
-                                    Медаль на колодке
-                                </div>
-                                <div class="card-list__status status-not-available">
-                                    Мало
-                                </div>
-                                <div class="card-list__price-block">
-                                    <div class="card-list__price">
-                                        3 500 руб.
-                                    </div>
-                                    <div class="card-list__sale">
-                                        -15%
-                                    </div>
-                                </div>
-                                <div class="card-list__order">
-                                    <button class="button button-order button_hover">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
-                                             viewBox="0 0 17 14">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .in-basket {
-                                                        fill: #303030;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="in-basket"
-                                                  d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
-                                                  transform="translate(-746 -1939)"/>
-                                        </svg>
-                                        В корзину
-                                    </button>
-                                </div>
-                                <button type="button" class="wish-list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
-                                         viewBox="0 0 27 23.97">
-                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                            <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                       x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                    <rdf:Description rdf:about=""/>
-                                                </rdf:RDF>
-                                            </x:xmpmeta>
-                                            <?xpacket end="w"?></metadata>
-                                        <defs>
-                                            <style>
-                                                .heart-icon {
-                                                    fill: #d2d2d2;
-                                                    fill-rule: evenodd;
-                                                }
-                                            </style>
-                                        </defs>
-                                        <path class="heart-icon"
-                                              d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
-                                              transform="translate(-681 -1014)"/>
-                                    </svg>
-                                </button>
-                                <button type="button" class="comparison">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
-                                                    C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
-                                                    C300.522,424.121,290.556,434.087,278.261,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
-                                                    C166.957,424.121,156.99,434.087,144.696,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
-                                                    C434.087,424.121,424.121,434.087,411.826,434.087z"/>
-                                        </svg>
-                                </button>
-                                <div class="rating">
-                                    <div class="rating__star">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                             viewBox="0 0 17 16">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .patrick {
-                                                        fill: #e6bc17;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="patrick"
-                                                  d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
-                                                  transform="translate(-879 -1011)"/>
-                                        </svg>
-
-                                    </div>
-                                    <div class="rating__number">
-                                        4,5
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-list__item card-list__item_four">
-                            <div class="card-list__item-wrapper">
-                                <div class="card-list__img">
-                                    <img src="images/catalog-img3.png" alt="Медаль на колодке">
-                                </div>
-                                <div class="card-list__article">
-                                    3000-002
-                                </div>
-                                <div class="card-list__title">
-                                    Медаль на колодке
-                                </div>
-                                <div class="card-list__status status-in-stock">
-                                    Мало
-                                </div>
-                                <div class="card-list__price-block">
-                                    <div class="card-list__price">
-                                        3 500 руб.
-                                    </div>
-                                    <div class="card-list__sale">
-                                        -15%
-                                    </div>
-                                </div>
-                                <div class="card-list__order">
-                                    <button class="button button-order button_hover">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
-                                             viewBox="0 0 17 14">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .in-basket {
-                                                        fill: #303030;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="in-basket"
-                                                  d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
-                                                  transform="translate(-746 -1939)"/>
-                                        </svg>
-                                        В корзину
-                                    </button>
-                                </div>
-                                <button type="button" class="wish-list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
-                                         viewBox="0 0 27 23.97">
-                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                            <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                       x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                    <rdf:Description rdf:about=""/>
-                                                </rdf:RDF>
-                                            </x:xmpmeta>
-                                            <?xpacket end="w"?></metadata>
-                                        <defs>
-                                            <style>
-                                                .heart-icon {
-                                                    fill: #d2d2d2;
-                                                    fill-rule: evenodd;
-                                                }
-                                            </style>
-                                        </defs>
-                                        <path class="heart-icon"
-                                              d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
-                                              transform="translate(-681 -1014)"/>
-                                    </svg>
-                                </button>
-                                <button type="button" class="comparison">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
-                                                    C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
-                                                    C300.522,424.121,290.556,434.087,278.261,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
-                                                    C166.957,424.121,156.99,434.087,144.696,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
-                                                    C434.087,424.121,424.121,434.087,411.826,434.087z"/>
-                                        </svg>
-                                </button>
-                                <div class="rating">
-                                    <div class="rating__star">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                             viewBox="0 0 17 16">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .patrick {
-                                                        fill: #e6bc17;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="patrick"
-                                                  d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
-                                                  transform="translate(-879 -1011)"/>
-                                        </svg>
-
-                                    </div>
-                                    <div class="rating__number">
-                                        4,5
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-list__item card-list__item_four">
-                            <div class="card-list__item-wrapper">
-                                <div class="card-list__img">
-                                    <img src="images/catalog-img1.png" alt="Медаль на колодке">
-                                </div>
-                                <div class="card-list__article">
-                                    3000-002
-                                </div>
-                                <div class="card-list__title">
-                                    Медаль на колодке
-                                </div>
-                                <div class="card-list__status status-few">
-                                    Мало
-                                </div>
-                                <div class="card-list__price-block">
-                                    <div class="card-list__price">
-                                        3 500 руб.
-                                    </div>
-                                    <div class="card-list__sale">
-                                        -15%
-                                    </div>
-                                </div>
-                                <div class="card-list__order">
-                                    <button class="button button-order button_hover">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
-                                             viewBox="0 0 17 14">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .in-basket {
-                                                        fill: #303030;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="in-basket"
-                                                  d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
-                                                  transform="translate(-746 -1939)"/>
-                                        </svg>
-                                        В корзину
-                                    </button>
-                                </div>
-                                <button type="button" class="wish-list">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
-                                         viewBox="0 0 27 23.97">
-                                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                            <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                       x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                    <rdf:Description rdf:about=""/>
-                                                </rdf:RDF>
-                                            </x:xmpmeta>
-                                            <?xpacket end="w"?></metadata>
-                                        <defs>
-                                            <style>
-                                                .heart-icon {
-                                                    fill: #d2d2d2;
-                                                    fill-rule: evenodd;
-                                                }
-                                            </style>
-                                        </defs>
-                                        <path class="heart-icon"
-                                              d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
-                                              transform="translate(-681 -1014)"/>
-                                    </svg>
-                                </button>
-                                <button type="button" class="comparison">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
-                                                    C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
-                                                    C300.522,424.121,290.556,434.087,278.261,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
-                                                    C166.957,424.121,156.99,434.087,144.696,434.087z"/>
-                                                <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
-                                                    c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
-                                                    C434.087,424.121,424.121,434.087,411.826,434.087z"/>
-                                        </svg>
-                                </button>
-                                <div class="rating">
-                                    <div class="rating__star">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
-                                             viewBox="0 0 17 16">
-                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
-                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
-                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-                                                        <rdf:Description rdf:about=""/>
-                                                    </rdf:RDF>
-                                                </x:xmpmeta>
-                                                <?xpacket end="w"?></metadata>
-                                            <defs>
-                                                <style>
-                                                    .patrick {
-                                                        fill: #e6bc17;
-                                                        fill-rule: evenodd;
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="patrick"
-                                                  d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
-                                                  transform="translate(-879 -1011)"/>
-                                        </svg>
-
-                                    </div>
-                                    <div class="rating__number">
-                                        4,5
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="section news news_small-margin">
-                    <h2 class="h2-title underlining underlining_blue">Новости и акции</h2>
-                    <div class="news-slide-number">
-                        <div class="news-slide-number__this-slide">
-                            1
-                        </div>
-                        <span class="delimiter-line">/</span>
-                        <div class="news-slide-number__count">
-                            9
-                        </div>
-                    </div>
-                    <div class="news-slider" id="init-news-slider">
-                        <a href="#" class="news-slider__item">
-                            <div class="news-slider__text-block">
-                                <div class="news-slider__title underlining underlining_blue">
-                                    «Принтэссенция»:
-                                    подарки как искусство
-                                </div>
-                                <div class="news-slider__text-prev">
-                                    Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
-                                    времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
-                                </div>
-                                <div class="news-slider__date">
-                                    <div class="news-slider__number">
-                                        20
-                                    </div>
-                                    <div class="news-slider__month-years">
-                                        марта 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-slider__img">
-                                <img src="images/news-img.png" alt="news-image">
-                            </div>
-                        </a>
-                        <a href="#" class="news-slider__item">
-                            <div class="news-slider__text-block">
-                                <div class="news-slider__title underlining underlining_blue">
-                                    «Принтэссенция»:
-                                    подарки как искусство
-                                </div>
-                                <div class="news-slider__text-prev">
-                                    Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
-                                    времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
-                                </div>
-                                <div class="news-slider__date">
-                                    <div class="news-slider__number">
-                                        20
-                                    </div>
-                                    <div class="news-slider__month-years">
-                                        марта 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-slider__img">
-                                <img src="images/news-img.png" alt="news-image">
-                            </div>
-                        </a>
-                        <a href="#" class="news-slider__item">
-                            <div class="news-slider__text-block">
-                                <div class="news-slider__title underlining underlining_blue">
-                                    «Принтэссенция»:
-                                    подарки как искусство
-                                </div>
-                                <div class="news-slider__text-prev">
-                                    Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
-                                    времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
-                                </div>
-                                <div class="news-slider__date">
-                                    <div class="news-slider__number">
-                                        20
-                                    </div>
-                                    <div class="news-slider__month-years">
-                                        марта 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-slider__img">
-                                <img src="images/news-img.png" alt="news-image">
-                            </div>
-                        </a>
-                        <a href="#" class="news-slider__item">
-                            <div class="news-slider__text-block">
-                                <div class="news-slider__title underlining underlining_blue">
-                                    «Принтэссенция»:
-                                    подарки как искусство
-                                </div>
-                                <div class="news-slider__text-prev">
-                                    Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
-                                    времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
-                                </div>
-                                <div class="news-slider__date">
-                                    <div class="news-slider__number">
-                                        20
-                                    </div>
-                                    <div class="news-slider__month-years">
-                                        марта 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-slider__img">
-                                <img src="images/news-img.png" alt="news-image">
-                            </div>
-                        </a>
-                        <a href="#" class="news-slider__item">
-                            <div class="news-slider__text-block">
-                                <div class="news-slider__title underlining underlining_blue">
-                                    «Принтэссенция»:
-                                    подарки как искусство
-                                </div>
-                                <div class="news-slider__text-prev">
-                                    Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
-                                    времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
-                                </div>
-                                <div class="news-slider__date">
-                                    <div class="news-slider__number">
-                                        20
-                                    </div>
-                                    <div class="news-slider__month-years">
-                                        марта 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-slider__img">
-                                <img src="images/news-img.png" alt="news-image">
-                            </div>
-                        </a>
-                        <a href="#" class="news-slider__item">
-                            <div class="news-slider__text-block">
-                                <div class="news-slider__title underlining underlining_blue">
-                                    «Принтэссенция»:
-                                    подарки как искусство
-                                </div>
-                                <div class="news-slider__text-prev">
-                                    Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
-                                    времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
-                                </div>
-                                <div class="news-slider__date">
-                                    <div class="news-slider__number">
-                                        20
-                                    </div>
-                                    <div class="news-slider__month-years">
-                                        марта 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-slider__img">
-                                <img src="images/news-img.png" alt="news-image">
-                            </div>
-                        </a>
-                        <a href="#" class="news-slider__item">
-                            <div class="news-slider__text-block">
-                                <div class="news-slider__title underlining underlining_blue">
-                                    «Принтэссенция»:
-                                    подарки как искусство
-                                </div>
-                                <div class="news-slider__text-prev">
-                                    Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
-                                    времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
-                                </div>
-                                <div class="news-slider__date">
-                                    <div class="news-slider__number">
-                                        20
-                                    </div>
-                                    <div class="news-slider__month-years">
-                                        марта 2018
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-slider__img">
-                                <img src="images/news-img.png" alt="news-image">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="news__show-all">
-                        <a href="#" class="more-info">
-                            Все новости >
-                        </a>
-                    </div>
-                </section>
             </div>
+            <div class="background_grey">
+                <div class="template-wrapper">
+                    <section class="section we-recommend">
+                        <h2 class="h2-title h2-title_for-card underlining underlining_blue">
+                            Мы рекомендуем
+                        </h2>
+                        <div class="card-list">
+                            <div class="card-list__item card-list__item_four">
+                                <div class="card-list__item-wrapper">
+                                    <div class="card-list__img">
+                                        <img src="images/catalog-img1.png" alt="Медаль на колодке">
+                                    </div>
+                                    <div class="card-list__article">
+                                        3000-002
+                                    </div>
+                                    <div class="card-list__title">
+                                        Медаль на колодке
+                                    </div>
+                                    <div class="card-list__status status-few">
+                                        Мало
+                                    </div>
+                                    <div class="card-list__price-block">
+                                        <div class="card-list__price">
+                                            3 500 руб.
+                                        </div>
+                                        <div class="card-list__sale">
+                                            -15%
+                                        </div>
+                                    </div>
+                                    <div class="card-list__order">
+                                        <button class="button button-order button_hover">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
+                                                 viewBox="0 0 17 14">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .in-basket {
+                                                            fill: #303030;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="in-basket"
+                                                      d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
+                                                      transform="translate(-746 -1939)"/>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <button type="button" class="wish-list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
+                                             viewBox="0 0 27 23.97">
+                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                        <rdf:Description rdf:about=""/>
+                                                    </rdf:RDF>
+                                                </x:xmpmeta>
+                                                <?xpacket end="w"?></metadata>
+                                            <defs>
+                                                <style>
+                                                    .heart-icon {
+                                                        fill: #d2d2d2;
+                                                        fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="heart-icon"
+                                                  d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
+                                                  transform="translate(-681 -1014)"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="comparison">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                    <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
+                                                        C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
+                                                        C300.522,424.121,290.556,434.087,278.261,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
+                                                        C166.957,424.121,156.99,434.087,144.696,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
+                                                        C434.087,424.121,424.121,434.087,411.826,434.087z"/>
+                                            </svg>
+                                    </button>
+                                    <div class="rating">
+                                        <div class="rating__star">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                                 viewBox="0 0 17 16">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .patrick {
+                                                            fill: #e6bc17;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="patrick"
+                                                      d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
+                                                      transform="translate(-879 -1011)"/>
+                                            </svg>
+    
+                                        </div>
+                                        <div class="rating__number">
+                                            4,5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item card-list__item_four">
+                                <div class="card-list__item-wrapper">
+                                    <div class="card-list__img">
+                                        <img src="images/catalog-img2.png" alt="Медаль на колодке">
+                                    </div>
+                                    <div class="card-list__article">
+                                        3000-002
+                                    </div>
+                                    <div class="card-list__title">
+                                        Медаль на колодке
+                                    </div>
+                                    <div class="card-list__status status-not-available">
+                                        Мало
+                                    </div>
+                                    <div class="card-list__price-block">
+                                        <div class="card-list__price">
+                                            3 500 руб.
+                                        </div>
+                                        <div class="card-list__sale">
+                                            -15%
+                                        </div>
+                                    </div>
+                                    <div class="card-list__order">
+                                        <button class="button button-order button_hover">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
+                                                 viewBox="0 0 17 14">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .in-basket {
+                                                            fill: #303030;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="in-basket"
+                                                      d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
+                                                      transform="translate(-746 -1939)"/>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <button type="button" class="wish-list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
+                                             viewBox="0 0 27 23.97">
+                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                        <rdf:Description rdf:about=""/>
+                                                    </rdf:RDF>
+                                                </x:xmpmeta>
+                                                <?xpacket end="w"?></metadata>
+                                            <defs>
+                                                <style>
+                                                    .heart-icon {
+                                                        fill: #d2d2d2;
+                                                        fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="heart-icon"
+                                                  d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
+                                                  transform="translate(-681 -1014)"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="comparison">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                    <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
+                                                        C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
+                                                        C300.522,424.121,290.556,434.087,278.261,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
+                                                        C166.957,424.121,156.99,434.087,144.696,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
+                                                        C434.087,424.121,424.121,434.087,411.826,434.087z"/>
+                                            </svg>
+                                    </button>
+                                    <div class="rating">
+                                        <div class="rating__star">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                                 viewBox="0 0 17 16">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .patrick {
+                                                            fill: #e6bc17;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="patrick"
+                                                      d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
+                                                      transform="translate(-879 -1011)"/>
+                                            </svg>
+    
+                                        </div>
+                                        <div class="rating__number">
+                                            4,5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item card-list__item_four">
+                                <div class="card-list__item-wrapper">
+                                    <div class="card-list__img">
+                                        <img src="images/catalog-img3.png" alt="Медаль на колодке">
+                                    </div>
+                                    <div class="card-list__article">
+                                        3000-002
+                                    </div>
+                                    <div class="card-list__title">
+                                        Медаль на колодке
+                                    </div>
+                                    <div class="card-list__status status-in-stock">
+                                        Мало
+                                    </div>
+                                    <div class="card-list__price-block">
+                                        <div class="card-list__price">
+                                            3 500 руб.
+                                        </div>
+                                        <div class="card-list__sale">
+                                            -15%
+                                        </div>
+                                    </div>
+                                    <div class="card-list__order">
+                                        <button class="button button-order button_hover">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
+                                                 viewBox="0 0 17 14">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .in-basket {
+                                                            fill: #303030;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="in-basket"
+                                                      d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
+                                                      transform="translate(-746 -1939)"/>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <button type="button" class="wish-list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
+                                             viewBox="0 0 27 23.97">
+                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                        <rdf:Description rdf:about=""/>
+                                                    </rdf:RDF>
+                                                </x:xmpmeta>
+                                                <?xpacket end="w"?></metadata>
+                                            <defs>
+                                                <style>
+                                                    .heart-icon {
+                                                        fill: #d2d2d2;
+                                                        fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="heart-icon"
+                                                  d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
+                                                  transform="translate(-681 -1014)"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="comparison">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                    <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
+                                                        C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
+                                                        C300.522,424.121,290.556,434.087,278.261,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
+                                                        C166.957,424.121,156.99,434.087,144.696,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
+                                                        C434.087,424.121,424.121,434.087,411.826,434.087z"/>
+                                            </svg>
+                                    </button>
+                                    <div class="rating">
+                                        <div class="rating__star">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                                 viewBox="0 0 17 16">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .patrick {
+                                                            fill: #e6bc17;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="patrick"
+                                                      d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
+                                                      transform="translate(-879 -1011)"/>
+                                            </svg>
+    
+                                        </div>
+                                        <div class="rating__number">
+                                            4,5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item card-list__item_four">
+                                <div class="card-list__item-wrapper">
+                                    <div class="card-list__img">
+                                        <img src="images/catalog-img1.png" alt="Медаль на колодке">
+                                    </div>
+                                    <div class="card-list__article">
+                                        3000-002
+                                    </div>
+                                    <div class="card-list__title">
+                                        Медаль на колодке
+                                    </div>
+                                    <div class="card-list__status status-few">
+                                        Мало
+                                    </div>
+                                    <div class="card-list__price-block">
+                                        <div class="card-list__price">
+                                            3 500 руб.
+                                        </div>
+                                        <div class="card-list__sale">
+                                            -15%
+                                        </div>
+                                    </div>
+                                    <div class="card-list__order">
+                                        <button class="button button-order button_hover">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14"
+                                                 viewBox="0 0 17 14">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .in-basket {
+                                                            fill: #303030;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="in-basket"
+                                                      d="M762.63,1944.89a2.061,2.061,0,0,0-1.656-.76h-1.919l-2.418-4.65a0.936,0.936,0,0,0-1.236-.4,0.872,0.872,0,0,0-.412,1.19l2.006,3.86h-4.944l2.006-3.86a0.871,0.871,0,0,0-.412-1.19,0.936,0.936,0,0,0-1.236.4l-2.418,4.65h-1.919a2.122,2.122,0,0,0-1.663.74,1.961,1.961,0,0,0-.348,1.74l1.128,4.34a2.9,2.9,0,0,0,2.726,2.05h8.848a3.038,3.038,0,0,0,2.781-1.99l1.364-4.38A1.882,1.882,0,0,0,762.63,1944.89Zm-1.488,1.23-1.364,4.38a1.19,1.19,0,0,1-1.015.72h-8.848a1.07,1.07,0,0,1-.938-0.7l-1.128-4.34a0.251,0.251,0,0,1,.013-0.21,0.278,0.278,0,0,1,.21-0.07h12.9a0.3,0.3,0,0,1,.177.04A0.261,0.261,0,0,1,761.142,1946.12Z"
+                                                      transform="translate(-746 -1939)"/>
+                                            </svg>
+                                            В корзину
+                                        </button>
+                                    </div>
+                                    <button type="button" class="wish-list">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23.97"
+                                             viewBox="0 0 27 23.97">
+                                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                           x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                        <rdf:Description rdf:about=""/>
+                                                    </rdf:RDF>
+                                                </x:xmpmeta>
+                                                <?xpacket end="w"?></metadata>
+                                            <defs>
+                                                <style>
+                                                    .heart-icon {
+                                                        fill: #d2d2d2;
+                                                        fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="heart-icon"
+                                                  d="M700.989,1014.01a8.32,8.32,0,0,0-6.489,3.58,8.321,8.321,0,0,0-6.49-3.58,6.911,6.911,0,0,0-7.01,7.01c0,3.73,3.206,11.77,13.5,16.96,10.294-5.19,13.5-13.23,13.5-16.96A6.912,6.912,0,0,0,700.989,1014.01Z"
+                                                  transform="translate(-681 -1014)"/>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="comparison">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                                    <path style="fill:#d2d2d2;" d="M278.261,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V22.261
+                                                        C211.478,9.966,221.444,0,233.739,0h44.522c12.295,0,22.261,9.966,22.261,22.261v389.565
+                                                        C300.522,424.121,290.556,434.087,278.261,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M144.696,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261v-256
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v256
+                                                        C166.957,424.121,156.99,434.087,144.696,434.087z"/>
+                                                    <path style="fill:#d2d2d2;" d="M411.826,434.087h-44.522c-12.295,0-22.261-9.966-22.261-22.261V278.261
+                                                        c0-12.295,9.966-22.261,22.261-22.261h44.522c12.295,0,22.261,9.966,22.261,22.261v133.565
+                                                        C434.087,424.121,424.121,434.087,411.826,434.087z"/>
+                                            </svg>
+                                    </button>
+                                    <div class="rating">
+                                        <div class="rating__star">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                                                 viewBox="0 0 17 16">
+                                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                                    <x:xmpmeta xmlns:x="adobe:ns:meta/"
+                                                               x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                                        <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                                            <rdf:Description rdf:about=""/>
+                                                        </rdf:RDF>
+                                                    </x:xmpmeta>
+                                                    <?xpacket end="w"?></metadata>
+                                                <defs>
+                                                    <style>
+                                                        .patrick {
+                                                            fill: #e6bc17;
+                                                            fill-rule: evenodd;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <path class="patrick"
+                                                      d="M887.5,1011l2.8,5.03,5.7,1.08-3.966,4.19,0.72,5.7-5.253-2.44-5.253,2.44,0.72-5.7L879,1017.11l5.7-1.08,2.8-5.03"
+                                                      transform="translate(-879 -1011)"/>
+                                            </svg>
+    
+                                        </div>
+                                        <div class="rating__number">
+                                            4,5
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section news news_small-margin">
+                        <h2 class="h2-title underlining underlining_blue">Новости и акции</h2>
+                        <div class="news-slide-number">
+                            <div class="news-slide-number__this-slide">
+                                1
+                            </div>
+                            <span class="delimiter-line">/</span>
+                            <div class="news-slide-number__count">
+                                9
+                            </div>
+                        </div>
+                        <div class="news-slider" id="init-news-slider">
+                            <a href="#" class="news-slider__item">
+                                <div class="news-slider__text-block">
+                                    <div class="news-slider__title underlining underlining_blue">
+                                        «Принтэссенция»:
+                                        подарки как искусство
+                                    </div>
+                                    <div class="news-slider__text-prev">
+                                        Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
+                                        времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
+                                    </div>
+                                    <div class="news-slider__date">
+                                        <div class="news-slider__number">
+                                            20
+                                        </div>
+                                        <div class="news-slider__month-years">
+                                            марта 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__img">
+                                    <img src="images/news-img.png" alt="news-image">
+                                </div>
+                            </a>
+                            <a href="#" class="news-slider__item">
+                                <div class="news-slider__text-block">
+                                    <div class="news-slider__title underlining underlining_blue">
+                                        «Принтэссенция»:
+                                        подарки как искусство
+                                    </div>
+                                    <div class="news-slider__text-prev">
+                                        Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
+                                        времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
+                                    </div>
+                                    <div class="news-slider__date">
+                                        <div class="news-slider__number">
+                                            20
+                                        </div>
+                                        <div class="news-slider__month-years">
+                                            марта 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__img">
+                                    <img src="images/news-img.png" alt="news-image">
+                                </div>
+                            </a>
+                            <a href="#" class="news-slider__item">
+                                <div class="news-slider__text-block">
+                                    <div class="news-slider__title underlining underlining_blue">
+                                        «Принтэссенция»:
+                                        подарки как искусство
+                                    </div>
+                                    <div class="news-slider__text-prev">
+                                        Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
+                                        времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
+                                    </div>
+                                    <div class="news-slider__date">
+                                        <div class="news-slider__number">
+                                            20
+                                        </div>
+                                        <div class="news-slider__month-years">
+                                            марта 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__img">
+                                    <img src="images/news-img.png" alt="news-image">
+                                </div>
+                            </a>
+                            <a href="#" class="news-slider__item">
+                                <div class="news-slider__text-block">
+                                    <div class="news-slider__title underlining underlining_blue">
+                                        «Принтэссенция»:
+                                        подарки как искусство
+                                    </div>
+                                    <div class="news-slider__text-prev">
+                                        Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
+                                        времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
+                                    </div>
+                                    <div class="news-slider__date">
+                                        <div class="news-slider__number">
+                                            20
+                                        </div>
+                                        <div class="news-slider__month-years">
+                                            марта 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__img">
+                                    <img src="images/news-img.png" alt="news-image">
+                                </div>
+                            </a>
+                            <a href="#" class="news-slider__item">
+                                <div class="news-slider__text-block">
+                                    <div class="news-slider__title underlining underlining_blue">
+                                        «Принтэссенция»:
+                                        подарки как искусство
+                                    </div>
+                                    <div class="news-slider__text-prev">
+                                        Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
+                                        времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
+                                    </div>
+                                    <div class="news-slider__date">
+                                        <div class="news-slider__number">
+                                            20
+                                        </div>
+                                        <div class="news-slider__month-years">
+                                            марта 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__img">
+                                    <img src="images/news-img.png" alt="news-image">
+                                </div>
+                            </a>
+                            <a href="#" class="news-slider__item">
+                                <div class="news-slider__text-block">
+                                    <div class="news-slider__title underlining underlining_blue">
+                                        «Принтэссенция»:
+                                        подарки как искусство
+                                    </div>
+                                    <div class="news-slider__text-prev">
+                                        Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
+                                        времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
+                                    </div>
+                                    <div class="news-slider__date">
+                                        <div class="news-slider__number">
+                                            20
+                                        </div>
+                                        <div class="news-slider__month-years">
+                                            марта 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__img">
+                                    <img src="images/news-img.png" alt="news-image">
+                                </div>
+                            </a>
+                            <a href="#" class="news-slider__item">
+                                <div class="news-slider__text-block">
+                                    <div class="news-slider__title underlining underlining_blue">
+                                        «Принтэссенция»:
+                                        подарки как искусство
+                                    </div>
+                                    <div class="news-slider__text-prev">
+                                        Что может быть лучше подарков? Только подарки с идеей. Ведь не всегда хватает
+                                        времени и ресурсов, чтобы придумать что-то тематическое и оригинальное.
+                                    </div>
+                                    <div class="news-slider__date">
+                                        <div class="news-slider__number">
+                                            20
+                                        </div>
+                                        <div class="news-slider__month-years">
+                                            марта 2018
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-slider__img">
+                                    <img src="images/news-img.png" alt="news-image">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news__show-all">
+                            <a href="#" class="more-info">
+                                Все новости >
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            
         </main>
         <footer class="footer">
             <div class="template-wrapper template-wrapper_footer">
