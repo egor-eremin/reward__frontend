@@ -4151,7 +4151,7 @@ svg {
 }
 
 .contact-form .form-item_flex {
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .contact-form .form-item-footer {
