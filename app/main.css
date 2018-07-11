@@ -537,9 +537,8 @@ footer {
 .wrapper-slider-button {
     position: absolute;
     left: 50%;
-    top: 0;
-    height: 100%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 .banner .slick-next {
@@ -4053,4 +4052,55 @@ svg {
 }
 .custom-upload__input.error ~ svg path {
     fill: red;
+}
+.reviews__img {
+    width: 184px;
+    height: 184px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #ffeb9c;
+    flex-shrink: 0;
+}
+.reviews__item {
+    display: flex;
+    padding-left: 1.375rem;
+    padding-bottom: 3.3125rem;
+    border-bottom: 2px solid #cecece;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.reviews__item::before {
+
+}
+.reviews__title {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 0.875rem;
+}
+.reviews__quantity {
+    font-style: italic;
+    font-weight: 700;
+    color: #a4a4a4;
+    font-size: 0.875rem;
+    margin-bottom: 1.1875rem;
+}
+.reviews__text {
+    font-size: 0.875rem;
+    line-height: 1.714;
+}
+.reviews__wrapper {
+    padding-top: 1.5625rem;
+}
+.reviews__text-block {
+    padding-left: 2.8125rem;
+    margin-top: -4px;
+    padding-right: 4.5rem;
+}
+.reviews__quote {
+    position: absolute;
+    right: 4.6875rem;
+    top: -2rem;
+}
+.pagination_reviews {
+    margin-top: -3rem;
 }

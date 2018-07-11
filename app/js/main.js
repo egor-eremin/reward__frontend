@@ -183,7 +183,6 @@ $(document).ready(function() {
 
     (function initRangeSlider() {
         if ($("div").is('#custom-range')) {
-            console.log('sdf');
             var slider = document.getElementById('custom-range');
             var minMeaning = document.getElementById('input-min');
             var maxMeaning = document.getElementById('input-max');
@@ -400,7 +399,9 @@ $(document).ready(function() {
         });
     })();
     (function initTabVacancies() {
-        addTabs('#vacancies-tab');
+        if ($('div').is('#vacancies-tab')) {
+            addTabs('#vacancies-tab');
+        }
     })();
     (function addIdForVacanciesForm() {
         $('.vacancies-form').each(function (i, e) {
