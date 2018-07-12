@@ -188,7 +188,6 @@ $(document).ready(function() {
 
     (function initRangeSlider() {
         if ($("div").is('#custom-range')) {
-            console.log('sdf');
             var slider = document.getElementById('custom-range');
             var minMeaning = document.getElementById('input-min');
             var maxMeaning = document.getElementById('input-max');
@@ -369,7 +368,7 @@ $(document).ready(function() {
     (function customizeCustomUpload() {
         var fileInput  = document.querySelector( ".upload-input" ),
             button = document.querySelector( ".input-file-trigger" ),
-            the_return = document.querySelector("#file-return");
+            the_return = document.querySelector(".file-return");
 
         if ($('div').is('.custom-upload')) {
             button.addEventListener("keydown", function (event) {
@@ -395,12 +394,40 @@ $(document).ready(function() {
            if (thisParent.hasClass('active')) {
                thisVacanciesText.slideUp(300);
                thisParent.removeClass('active');
+               $(this).removeClass('active');
            } else {
+               // $('.vacancies__element-item-body').slideUp(300);
                thisVacanciesText.slideDown(300);
                thisParent.addClass('active');
+               $(this).addClass('active');
            }
         });
     })();
+    (function initTabVacancies() {
+        if ($('div').is('#vacancies-tab')) {
+            addTabs('#vacancies-tab');
+        }
+    })();
+    (function addIdForVacanciesForm() {
+        $('.vacancies-form').each(function (i, e) {
+            $(this).attr('id','vacancies-form-' + i);
+        });
+    })();
+    (function addValidationVacanciesForm() {
+        $('[id^="vacancies-form-"]').each(function (i, e) {
+            $(this).validate({
+                        required: true,
+                    });
+        });
+    })();
+    (function initAskQuestion() {
+        
+    })();
+    // (function validateVacanciesForm() {
+    //     $('.vacancies-form').validate({
+    //         required: true,
+    //     });
+    // })();
     
 
     // (function initMusk() {
