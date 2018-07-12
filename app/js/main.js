@@ -390,16 +390,17 @@ $(document).ready(function() {
         $('.button-show-vacancies').on('click', function () {
            var thisParent = $(this).parents('.vacancies__element-item');
            var thisVacanciesText = thisParent.find('.vacancies__element-item-body');
+           var parentTop = thisParent.offset().top;
 
            if (thisParent.hasClass('active')) {
                thisVacanciesText.slideUp(300);
                thisParent.removeClass('active');
                $(this).removeClass('active');
            } else {
-               // $('.vacancies__element-item-body').slideUp(300);
                thisVacanciesText.slideDown(300);
                thisParent.addClass('active');
                $(this).addClass('active');
+               $('html, body').animate({ scrollTop: parentTop }, 1000);
            }
         });
     })();
@@ -421,7 +422,19 @@ $(document).ready(function() {
         });
     })();
     (function initAskQuestion() {
-        
+       $('.ask-question').on('click', function () {
+          $('.callback').trigger('click');
+       });
+    })();
+    (function initMapContact() {
+        if ($('div').is('#map')) {
+            ymaps.ready(initYMap);
+        }
+    })();
+    (function initValidateDemandsForm() {
+        $('.demands-form').validate({
+            required: true,
+        });
     })();
     // (function validateVacanciesForm() {
     //     $('.vacancies-form').validate({
@@ -717,6 +730,6 @@ $(document).ready(function() {
             });
         }));
     }
-    ymaps.ready(initYMap);
+    // ymaps.ready(initYMap);
 
 });

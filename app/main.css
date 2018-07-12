@@ -2600,7 +2600,7 @@ svg {
     font-size: 1.875rem;
     font-weight: 300;
     line-height: 1.2;
-    padding-bottom: 1.3125rem;
+    padding-bottom: 15px;
 }
 .code-product {
     line-height: 1.375rem;
@@ -3665,23 +3665,27 @@ svg {
     text-decoration: underline;
     margin-top: 11px;
 }
-.cooperation__wrapper, .white-wrapper, .vacancies__element-item-header {
+.cooperation__wrapper, .white-wrapper, .vacancies__element-item-header, .demands__element-item-header, .demands__element-item-body, .vacancies__element-item-body {
     background-color: #fff;
     border-radius: 5px;
     padding: 1.3125rem 1.875rem;
+}
+.demands__element-item-body {
+    padding-top: 2.625rem;
+    display: none;
 }
 .cooperation-form, .state-purchases-form {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-.cooperation-form__item, .state-purchases-form__item {
+.cooperation-form__item, .state-purchases-form__item, .demands-form__item {
     width: calc(50% - 10px);
 }
-.cooperation-form__item:first-child, .state-purchases-form__item:first-child {
+.cooperation-form__item:first-child, .state-purchases-form__item:first-child, .demands-form__item:first-child {
     margin-right: 10px;
 }
-.cooperation-form__item:nth-child(2), .state-purchases-form__item:nth-child(2) {
+.cooperation-form__item:nth-child(2), .state-purchases-form__item:nth-child(2), .demands-form__item:nth-child(2) {
     margin-left: 10px;
 }
 .cooperation-form__footer, .state-purchases-form__footer {
@@ -3972,7 +3976,7 @@ svg {
     margin-right: 2.3125rem;
     margin-bottom: 7px;
 }
-.vacancies__element-item-header {
+.vacancies__element-item-header, .demands__element-item-header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -3980,13 +3984,13 @@ svg {
     box-shadow: 0px 27px 46px 0px rgba(201, 201, 201, 0.51);
     position: relative;
 }
-.vacancies__element-title {
+.vacancies__element-title, .demands__element-title {
     display: flex;
     align-items: center;
     font-weight: 300;
     line-height: 0.916;
 }
-.vacancies__title-text {
+.vacancies__title-text, .demands__title-text {
     font-size: 1.5rem;
 }
 .vacancies__employment {
@@ -4004,7 +4008,7 @@ svg {
     padding-top: 2.625rem;
     display: none;
 }
-.vacancies-form {
+.vacancies-form, .demands-form {
     display: flex;
     flex-wrap: wrap;
 }
@@ -4037,7 +4041,7 @@ svg {
 .custom-upload__path {
     padding-left: 25px;
 }
-.vacancies__element-item {
+.vacancies__element-item, .demands {
     margin-bottom: 26px;
     width: 100%;
 }
@@ -4298,4 +4302,45 @@ svg {
     justify-content: center;
     flex-shrink: 0;
 }
-
+.services__prev-img img {
+    width: 100%;
+}
+.two-column-text {
+    column-count: 2;
+}
+.attention-block {
+    background-color: #ffdd55;
+    box-shadow: 0px 27px 46px 0px rgba(178, 142, 0, 0.51);
+    font-size: 0.875rem;
+    line-height: 1.714;
+    display: flex;
+    align-items: center;
+    margin-top: 3.5625rem;
+    padding: 1.8125rem 2.9375rem;
+    margin-bottom: 1.6875rem;
+}
+.services__prev-img {
+    margin-bottom: 2.0625rem;
+}
+.attention-block__icon {
+    margin-right: 2.6875rem;
+    border-radius: 5px;
+}
+.content-page__wrapper a {
+    font-size: 0.875rem;
+    line-height: 1.28;
+    text-decoration: underline;
+    color: #0055cc;
+}
+.content-page__wrapper a:hover {
+    text-decoration: none;
+}
+.demands-form__item .form-label {
+    background-color: #f5f6fa;
+}
+.demands-form__item .form-input {
+    background-color: transparent;
+}
+.demands {
+    margin-bottom: 3.1875rem;
+}
