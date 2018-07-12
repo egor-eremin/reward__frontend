@@ -510,6 +510,9 @@ footer {
     align-items: center;
     transition-delay: 1s !important;
 }
+.banner__item:hover {
+    text-decoration: none;
+}
 .banner__name, .banner__separate {
     font-size: 5rem;
 }
