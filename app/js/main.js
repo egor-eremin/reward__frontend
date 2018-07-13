@@ -436,6 +436,12 @@ $(document).ready(function() {
             required: true,
         });
     })();
+    (function initPreloader() {
+        $(window).on('load', function() {
+            $('.preloader').fadeOut('slow');
+            $('body').css('overflow', 'auto');
+        });
+    })();
     // (function validateVacanciesForm() {
     //     $('.vacancies-form').validate({
     //         required: true,
