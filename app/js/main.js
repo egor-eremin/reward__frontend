@@ -444,7 +444,6 @@ $(document).ready(function() {
     //     });
     // })();
 
-
     // (function initMusk() {
     //     $('.quantity input').mask("a", {
     //         translation: {
@@ -739,7 +738,9 @@ $(document).ready(function() {
 
 });
 
-$(window).on('load', function() {
-    $('.preloader').fadeOut('slow');
-    $('body').css('overflow', 'auto');
-});
+window.onload = function() {
+    $('.preloader').fadeOut('300');
+    setTimeout(function () {
+        $('body').css('overflow', 'auto');
+    }, 300);
+};

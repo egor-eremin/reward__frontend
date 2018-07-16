@@ -2987,6 +2987,7 @@ svg {
     font-size: 1.125rem;
     line-height: 1.22;
     font-weight: 300;
+    max-width: 50px;
 }
 .quantity input[type=number]::-webkit-inner-spin-button,
 .quantity input[type=number]::-webkit-outer-spin-button
@@ -3599,6 +3600,7 @@ svg {
     font-weight: 700;
     font-style: italic;
     line-height: 1.375;
+    width: 100%;
 }
 .content-page__right-column {
     width: calc(70% - 1.25rem);
@@ -3770,6 +3772,7 @@ svg {
 .articles-wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .articles__item {
@@ -3813,6 +3816,7 @@ svg {
     height: 215px;
     top: 265px;
     left: 0;
+    overflow: hidden;
 }
 
 .articles__item_first .articles__img-wrapper,
@@ -3831,6 +3835,7 @@ svg {
     width: 100%;
     object-fit: cover;
     font-family: 'object-fit: cover;';
+    transition: .3s ease-in-out;
 }
 
 .articles__content-wrapper {
@@ -3853,35 +3858,43 @@ svg {
     font-style: italic;
     text-overflow: ellipsis;
     overflow: hidden;
+    position: relative;
 }
 
 .content-articles:before {
     content: "";
-    float: left;
-    width: 5px;
-    height: 100%;
+    /* float: left; */
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, white);
+    left: 0;
+    bottom: 0;
+}
+.articles__item:hover .image-articles {
+    transform: scale(1.1);
 }
 
 .content-articles > *:first-child {
-    float: right;
+    /*float: right;*/
     width: 100%;
-    margin-left: -5px;
+    /*margin-left: -5px;*/
 }
 
-.content-articles:after {
-    content: "\02026";
-    box-sizing: content-box;
-    float: right;
-    position: relative;
-    top: -25px;
-    left: 100%; 
-    width: 3em;
-    margin-left: -3em;
-    padding-right: 5px;	
-    text-align: right;
-    background-size: 100% 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
-}
+/*.content-articles:after {*/
+    /*content: "\02026";*/
+    /*box-sizing: content-box;*/
+    /*float: right;*/
+    /*position: relative;*/
+    /*top: -25px;*/
+    /*left: 100%; */
+    /*width: 3em;*/
+    /*margin-left: -3em;*/
+    /*padding-right: 5px;	*/
+    /*text-align: right;*/
+    /*background-size: 100% 100%;*/
+    /*background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);*/
+/*}*/
 
 .articles__content-wrapper hr {
     margin-top: 25px;
@@ -4431,4 +4444,11 @@ svg {
         transform: scale(1.5);
         opacity: 0;
     }
+}
+.content-page__wrapper {
+    width: 100%;
+}
+.preloader .download-cup-svg {
+    fill: #fff;
+    opacity: 1;
 }
