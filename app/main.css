@@ -470,14 +470,14 @@ input {
     padding: 0;
     border: 0;
 }
-input::-webkit-input-placeholder       {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
-input::-moz-placeholder                {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
-input:-moz-placeholder                 {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
-input:-ms-input-placeholder            {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
-input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
-input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
-input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
-input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder   {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder, textarea::-moz-placeholder {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder, textarea:-moz-placeholder  {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color: #494949; opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder, textarea:focus:-moz-placeholder   {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
 .template-wrapper {
     width: 100%;
     max-width: 1232px;
@@ -1777,6 +1777,9 @@ svg {
     resize: none;
     height: 11.6875rem;
     padding: 1.25rem 2.3125rem;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: #2d2d2d;
 }
 .form-item:not(:last-child) {
     margin-bottom: 1rem;
