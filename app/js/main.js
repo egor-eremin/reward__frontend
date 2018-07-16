@@ -722,16 +722,18 @@ $(document).ready(function() {
             myMap.geoObjects.add(myPlacemark);
         };
         renderMap();
-        [...document.querySelectorAll('.map__button>button')].map((item, i, arr) => item.addEventListener('click', () => {
-            arr.map(it => {
-                it.classList.toggle('active');
-                if (it.classList.contains('active')) {
-                    myMap.destroy();
-                    renderMap();
-                }
+        $('.map__button>button').map(function (i, item, arr) 
+        {
+            item.addEventListener('click', function() {
+                $('.map__button>button').map(function (ind, it) {
+                    it.classList.toggle('active');
+                    if (it.classList.contains('active')) {
+                        myMap.destroy();
+                        renderMap();
+                    }
+                });
             });
-        }));
-
+        });
     }
     // ymaps.ready(initYMap);
 
