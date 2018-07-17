@@ -4321,6 +4321,7 @@ svg {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    margin-left: 15px;
 }
 .services__prev-img img {
     width: 100%;
