@@ -437,6 +437,24 @@ $(document).ready(function() {
             required: true,
         });
     })();
+    (function initCardPopup() {
+        $('.card-block-popup').magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled:true,
+            },
+            mainClass: 'card-gallery'
+        });
+    })();
+    (function initPopupRecommendations() {
+        $('.recommendations-popup-init').magnificPopup({
+            type: 'inline',
+            items: {
+                src: '.recommendations-popup',
+            },
+            showCloseBtn: false,
+        });
+    })();
     // (function initPreloader() {
     //     $(window).load(function() {
     //         $('.preloader').fadeOut('slow');

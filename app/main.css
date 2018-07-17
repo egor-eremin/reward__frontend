@@ -4505,6 +4505,31 @@ page-404__title::after {
 .page-404__link:hover {
     text-decoration: none;
 }
+.mfp-figure:after {
+    box-shadow: none;
+    background: none;
+}
+.mfp-arrow-right:after {
+    border-left-color: #ffdd55;
+}
+.mfp-arrow-left:after {
+    border-right-color: #ffdd55;
+}
+.mfp-counter {
+    color: #077ba8;
+}
+.card-gallery + .mfp-gallery .mfp-close {
+    color: #077ba8;
+}
+.mfp-arrow-right:before {
+    border-left-color: #077ba8;
+}
+.mfp-arrow-left:before {
+    border-right-color: #077ba8;
+}
+.recommendations-popup {
+    max-width: 1306px;
+}
 @keyframes noise-anim {
     0% {
         clip: rect(150px, 9999px, 125px, 0);
