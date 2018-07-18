@@ -56,9 +56,19 @@ $(document).ready(function() {
             $(this).mouseout(function () {
                 thisParents.css('height','auto');
             });
-
         })
 
+        $('.button-all-category').on('click', function (e) {
+            var
+            e.preventDefault();
+            if (thisParents.hasClass('active')) {
+                thisParents.css('height','auto');
+                thisParents.removeClass('active');
+            } else {
+                thisParents.css('height',thisHeight);
+                thisParents.addClass('active');
+            }
+        });
     })();
     (function addViewportAnimation() {
         $('.souvenir').viewportChecker({

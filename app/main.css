@@ -1370,7 +1370,7 @@ svg {
 .cards__category-item + .cards__category-item {
     margin-top: 4px;
 }
-.cards__wrapper:hover {
+.cards__wrapper:hover, .cards__item.active .cards__wrapper {
     margin-left: 10px;
     width: calc(100% - 20px);
     position: absolute;
@@ -4674,4 +4674,22 @@ page-404__title::after {
 }
 .registration-form__item {
     max-width: 600px;
+}
+.button-all-category {
+    font-size: 12px;
+    padding: 5px 15px;
+    margin: 0 auto 10px auto;
+    display: none;
+}
+.button-all-category:hover {
+    background-color: #ffdd55;
+    border-color: #404040;
+}
+@media (max-width: 1200px) {
+    .cards__item {
+        width: 25%;
+    }
+    .button-all-category {
+        display: block;
+    }
 }
