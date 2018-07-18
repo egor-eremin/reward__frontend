@@ -4009,6 +4009,7 @@ svg {
     align-items: center;
     font-weight: 300;
     line-height: 0.916;
+    margin-right: 1.875rem;
 }
 .vacancies__title-text, .demands__title-text {
     font-size: 1.5rem;
