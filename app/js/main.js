@@ -143,6 +143,7 @@ $(document).ready(function() {
             required: "Это поле обязательно для заполнения",
             minlength: "Введите корректный телефон",
             email: "Введите корректный email",
+            equalTo: "Пароли не совпадают",
         });
     })();
     (function addPhoneMask() {
@@ -160,10 +161,10 @@ $(document).ready(function() {
     })();
     (function toggleTypeInput() {
         $('.eye-icon').mousedown(function () {
-            myFunction();
+            cnageTypeInput($(this));
         });
         $('.eye-icon').mouseup(function () {
-            myFunction();
+            cnageTypeInput($(this));
         });
     })();
     (function validateEnterForm() {
@@ -455,6 +456,11 @@ $(document).ready(function() {
             showCloseBtn: false,
         });
     })();
+    (function validation() {
+        $('.registration-form').validate({
+            required: true,
+        });
+    })();
     // (function initPreloader() {
     //     $(window).load(function() {
     //         $('.preloader').fadeOut('slow');
@@ -626,13 +632,14 @@ $(document).ready(function() {
             dropdownParent:$(dr_parent),
         });
     }
-    function myFunction() {
-        var thisInput = document.getElementById("password");
-        if (thisInput.type === "password") {
-            thisInput.type = "text";
-        } else {
-            thisInput.type = "password";
-        }
+    function cnageTypeInput(thisSelector) {
+        var thisInput = thisSelector.parent('.form-item').find('.form-input');
+
+        if (thisInput.attr('type') == "password") {
+                thisInput.attr('type','text');
+            } else {
+                thisInput.attr('type','password');
+            }
     }
     function wrapUpSliderArrow(arrow, wrapper) {
        $(arrow).wrapAll('<div class="' + wrapper + '"></div>');

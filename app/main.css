@@ -1876,6 +1876,7 @@ svg {
     font-size: 0.875rem;
     display: block;
     position: absolute;
+    margin-top: 2px;
 }
 .form-input.error {
     border-color: red;
@@ -4661,4 +4662,16 @@ page-404__title::after {
     100% {
         clip: rect(192px, 9999px, 142px, 0);
     }
+}
+.registration {
+    margin-top: 3.5rem;
+}
+.form-label_grey {
+    background-color: #f5f6fa;
+}
+.form-input_grey {
+    background-color: transparent;
+}
+.registration-form__item {
+    max-width: 600px;
 }
