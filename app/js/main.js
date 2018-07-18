@@ -346,27 +346,6 @@ $(document).ready(function() {
             initializationExamlesSlider()
         }
     })();
-    // (function initIsotop() {
-    //     if ($('div').is('.vacancies__filter-block')) {
-    //         $('.vacancies__filter-block').isotope({
-    //             layoutMode: 'vertical',
-    //             itemSelector: '.vacancies__element-item',
-    //         });
-    //
-    //         $('.vacancies__tab-titles').on( 'click', '.vacancies__tab-switch', function() {
-    //             var filterValue = $( this ).attr('data-filter');
-    //             $('.vacancies__filter-block').isotope({ filter: filterValue });
-    //         });
-    //     }
-    // })();
-    // (function switchVacanciesFilters() {
-    //     $('.vacancies__tab-switch').on('click', function () {
-    //        if (!$(this).hasClass('active')) {
-    //            $('.vacancies__tab-switch').removeClass('active');
-    //            $(this).addClass('active');
-    //        }
-    //     });
-    // })();
     (function customizeCustomUpload() {
         var fileInput  = document.querySelector( ".upload-input" ),
             button = document.querySelector( ".input-file-trigger" ),
@@ -461,21 +440,16 @@ $(document).ready(function() {
             required: true,
         });
     })();
-    // (function initPreloader() {
-    //     $(window).load(function() {
-    //         $('.preloader').fadeOut('slow');
-    //         $('body').css('overflow', 'auto');
-    //     });
-    // })();
 
     // (function initMusk() {
-    //     $('.quantity input').mask("a", {
-    //         translation: {
-    //             'a': {
-    //                 pattern: '^[1-9][0-9]*$',
+    //         $('.quantity input').mask("a#", {
+    //             "#": {pattern: "^[0-9]+$"},
+    //             translation: {
+    //                 'a': {
+    //                     pattern: "[1-9]",
+    //                 }
     //             }
-    //         }
-    //     });
+    //         });
     // })();
 
 
