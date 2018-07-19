@@ -59,14 +59,15 @@ $(document).ready(function() {
         })
 
         $('.button-all-category').on('click', function (e) {
-            var
+            var parentOfButton = $(this).parents('.cards__item');
+            var heightCardsWrapper = parentOfButton.find('.cards__wrapper').outerHeight();
             e.preventDefault();
-            if (thisParents.hasClass('active')) {
-                thisParents.css('height','auto');
-                thisParents.removeClass('active');
+            if (parentOfButton.hasClass('active')) {
+                parentOfButton.css('height','auto');
+                parentOfButton.removeClass('active');
             } else {
-                thisParents.css('height',thisHeight);
-                thisParents.addClass('active');
+                parentOfButton.css('height',heightCardsWrapper);
+                parentOfButton.addClass('active');
             }
         });
     })();

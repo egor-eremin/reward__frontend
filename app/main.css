@@ -1370,19 +1370,7 @@ svg {
 .cards__category-item + .cards__category-item {
     margin-top: 4px;
 }
-.cards__wrapper:hover, .cards__item.active .cards__wrapper {
-    margin-left: 10px;
-    width: calc(100% - 20px);
-    position: absolute;
-    height: auto;
-    border-color: #deb200;
-    background-color: #ffdd55;
-    background-image: url("../images/cup-background.png");
-    background-repeat: no-repeat;
-    background-position: center 34px;
-    z-index: 3;
-    box-shadow: 0px 16px 65px 0px rgba(236, 203, 73, 0.69);
-}
+
 .cards__wrapper:hover .cards__category-items::before {
     background-color: #ffdd55;
 }
@@ -4685,11 +4673,39 @@ page-404__title::after {
     background-color: #ffdd55;
     border-color: #404040;
 }
+@media (min-width: 1199px) {
+    .cards__wrapper:hover {
+        margin-left: 10px;
+        width: calc(100% - 20px);
+        position: absolute;
+        height: auto;
+        border-color: #deb200;
+        background-color: #ffdd55;
+        background-image: url("../images/cup-background.png");
+        background-repeat: no-repeat;
+        background-position: center 34px;
+        z-index: 3;
+        box-shadow: 0px 16px 65px 0px rgba(236, 203, 73, 0.69);
+    }
+}
 @media (max-width: 1200px) {
     .cards__item {
         width: 25%;
     }
     .button-all-category {
         display: block;
+    }
+    .cards__item.active .cards__wrapper {
+        margin-left: 10px;
+        width: calc(100% - 20px);
+        position: absolute;
+        height: auto;
+        border-color: #deb200;
+        background-color: #ffdd55;
+        background-image: url("../images/cup-background.png");
+        background-repeat: no-repeat;
+        background-position: center 34px;
+        z-index: 3;
+        box-shadow: 0px 16px 65px 0px rgba(236, 203, 73, 0.69);
     }
 }
